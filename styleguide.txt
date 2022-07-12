@@ -1,0 +1,35 @@
+
+##Typgraphy;
+
+   Font: Fira Sans
+
+   Header: 16px bold 
+   Title: 16px bold
+   Body: 14px Regular
+   Footer: 16px bold
+
+##Color;
+   Primary Color:
+      #656565
+   Secondary Color:
+      #ff7f00
+      #99BADD
+
+   State Colors;
+      Info: #0984E3
+      Success: #00B894
+      Danger: #D63031
+      Warning: #FDCB6E
+
+   Tertiary Colors;
+      #999997;
+      #E6E6E3
+      #595958
+      #f2f6f8
+      #17222b
+      #000000
+      #ffffff
+      #a1a1a1
+      #29333C
+      #ff0000
+
