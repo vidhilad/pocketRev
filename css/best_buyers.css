@@ -1,0 +1,339 @@
+/*  start main header style */
+#maintag{
+	background-color: #a1a1a1;
+	padding: 25px 25px;
+	font-size: 40px;
+	text-shadow: 4px 4px gray;
+	text-align: center;
+	color: azure;
+	font-weight: 900;
+}
+/*  end main header style */
+
+/*  start laptop section  style */
+#laptoptag{
+	padding-top: 10px;
+	text-align: center;
+	background:#eee;
+	font-weight: 900;
+	 font-family: sans-serif;
+	font-size: 25px;
+}
+.icons-container{
+	background:#eee;
+	display: flex;
+	flex-wrap: wrap;
+	gap:1.5rem;
+	padding-left: 2rem;
+	padding-top: 2rem;
+	padding-bottom: 1rem;
+}
+.icons-container .icons:hover{
+	background: #e1e1e1;
+	border: 1px solid #d0d0d0;
+}
+.icons-container .icons{
+	background:#fff;
+	border:.1rem solid rgba(0,0,0,.1);
+	padding-top: 4rem;
+	padding-bottom: 4.2rem;
+	padding-left: 2rem;
+	display: flex;
+	align-items: center;
+	flex:1 1 25rem;
+}
+.icons-container .icons {
+	height:5.5rem;
+	margin-right: 2rem;
+}
+.icons-container .icons h3{
+	margin-left: 59px;
+	color:#333;
+}
+
+.icons-container .icons p{
+	color:#555;
+	margin-left: 27px;
+	font-family: sans-serif;
+}
+.icons-container .icons address{
+	color:#555;
+	font-size:15px;
+	margin-left: 5em;
+	font-family: sans-serif;
+
+}
+.image{
+	height: 7rem;
+	width: 10rem;
+}
+/*  end laptop section  style */
+
+/*  start tablet section  style */
+#tabtag{
+	margin: 20PX 0 20px 0;
+	padding: 10px 10px;
+	text-align: center;
+	background: lightgray;
+	font-weight: 900;
+	font-family: sans-serif;
+	font-size: 25px;
+}
+#tabtag img{
+	height:50px ;
+	width:50px;
+}
+.products .box-container{
+	display: flex;
+	flex-wrap: wrap;
+	gap:1rem;
+	padding-left: 10px;
+	padding-right: 12px;
+}
+.products .box-container .box{
+	flex:1 1 4rem;
+	border-radius: .5rem;
+	border:.2rem solid lightgray;
+	box-shadow: #333;
+	box-shadow: 4px 4px 5px;
+	position: relative; 
+	background-color: #E6E6E3; 
+}
+.products .box-container .box .discount{
+	position: relative;
+	top:1rem; left:8rem;
+	font-size: 2rem;
+}
+.products .box-container .box .images img{
+	margin-left: 100px;
+	margin-top: 30px;
+	border-radius: 5px;
+	height:200px;
+	width:200px;
+}
+.products .box-container .box .content{
+	text-align: center;
+}
+.products .box-container .box .content h3{
+	font-size: 1.5rem;
+	color:#333;
+}
+.products .box-container .box .content h3:hover{
+	background-color: darkgray;
+}
+.products .box-container .box .content .price{
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+/*  end tablet section  style */
+
+/*  start phone section  style */
+#phntag{
+	margin: 20PX 0 20px 0;
+	padding: 5px 5px;
+	text-align: center;
+	background: lightgray;
+	font-weight: 900;
+	font-family: sans-serif;
+	font-size: 25px;
+}
+#phntag img{
+	height:70px ;
+	width:120px;
+	border-radius: 3px;
+}
+.smartphones .box_layout{
+	display: flex;
+	flex-wrap: wrap;
+	gap:1rem;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.smartphones .box_layout .boxStyle{
+	flex:1 1 4rem;
+	border-radius: .5rem;
+	border:.2rem solid lightgray;
+	box-shadow: #333;
+	box-shadow: 4px 4px 5px;
+	position: relative; 
+}
+.smartphones  .box_layout .boxStyle .phones{
+	position: relative;
+	top:1rem; left:3rem;
+	font-size: 2rem;
+}
+.smartphones  .box_layout .boxStyle .picture img{
+	position: relative;
+	margin-left: 55px;
+	margin-top: 40px;
+	border-radius: 5px;
+	height:200px;
+	width:200px;
+}
+.smartphones  .box_layout .boxStyle .picture h3{
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	box-sizing: border-box;
+	font-size: 1.5rem;
+	text-align: center;
+	visibility: none; opacity: 0;
+	transition: opacity 0.3s;
+}
+.smartphones  .box_layout .boxStyle .picture:hover h3{
+	visibility: visible; opacity: 1;
+}
+.smartphones  .box_layout .boxStyle .desc{
+	text-align: center;
+}
+.smartphones  .box_layout .boxStyle .desc p{
+	font-size: 1rem;
+	color:#333;
+	font-weight: bold;  
+}
+/*  end smartphones section  style */
+
+/*  start cameras section  style */
+#camtag{
+	margin: 20PX 0 20px 0;
+	padding: 5px 5px;
+	text-align: center;
+	background:#eee;
+	font-weight: 900;
+	font-family: sans-serif;
+	font-size: 25px;
+}
+#camtag img{
+	height:70px ;
+	width:150px;
+	border-radius: 3px;
+}
+.camera_container{
+	background:#eee;
+	display: flex;
+	flex-wrap: wrap;
+	gap:1.5rem;
+	padding-left: 1.5rem;
+	padding-top: 2rem;
+	padding-bottom: 1rem;
+}
+
+.camera_container .cameraStyle{
+	background:lightgray;
+	border:.1rem solid rgba(0,0,0,.1);
+	padding-top: 4rem;
+	padding-left: 2rem;
+	padding-bottom: 4.5rem;
+	display: flex;
+	align-items: center;
+	flex:1 1 25rem;
+}
+.camera_container .cameraStyle {
+	height:5.5rem;
+	margin-right: 2rem;
+}
+.camera_container .cameraStyle h3{
+	margin-left: 65px;
+	color:#333;
+}
+.camera_container .cameraStyle .info p{
+	color:#333;
+	margin-left: 45px;
+	font-size: 14px;
+	font-family: sans-serif;
+}
+.camImage{
+	height: 8rem;
+	width: 11rem;
+	padding-top: 5px;
+}
+/*  end cameras section  style */
+
+
+/* media quries for phones */
+@media (max-width:450px){
+    
+    html{
+        font-size: 50%;
+    }
+	.icons-container .icons address{
+		color:#555;
+		font-size:8px;
+		margin-left: 5em;
+	}
+	#laptoptag{
+		padding-left: 12px;
+		font-size: 20px;
+	}
+
+	#tabtag{
+		font-size: 20px;
+	}
+	.products .box-container .box .discount{
+		 left:12rem;
+		font-size: 3rem;
+	}
+	.products .box-container .box .images img{
+		margin-left: 50px;
+		margin-top: 30px;
+	}
+	.products .box-container .box .content{
+		text-align: center;
+	}
+	.products .box-container .box .content h3{
+		font-size: 2rem;
+	}
+	.products .box-container .box .content .price{
+		font-size: 2rem;
+	}	
+	#phntag{
+		font-size: 20px;
+	}
+	.smartphones  .box_layout .boxStyle .desc p{
+		font-size: 2rem;
+	}
+	.smartphones  .box_layout .boxStyle .phones {
+		font-size: 2.5rem;  
+		padding-left: 7.5rem;
+	}	
+	#camtag{
+		font-size: 20px;
+	}
+	.camera_container .cameraStyle .info p{
+		font-size: 7px;
+	}
+}
+
+/* media quries for tablet */
+
+@media (max-width:768px){
+	.smartphones  .box_layout .boxStyle .desc p{
+		font-size: 1.3rem;
+	}
+	.smartphones  .box_layout .boxStyle .phones {
+		font-size: 2.5rem;  
+	left: 3.5rem;
+	}
+	.smartphones  .box_layout .boxStyle .picture img{
+		margin-left: 75px;
+	}  
+}
+@media (max-width:1024px){
+	.icons-container .icons address{
+		color:#555;
+		font-size:12px;	
+	}
+	.icons-container .icons p{
+		font-size:12px;	
+	}
+	.camera_container .cameraStyle .info p{
+		font-size: 10.5px;
+	}
+	.products .box-container .box .discount{
+	 left:7rem;
+	}
+	.products .box-container .box .images img{
+		margin-left: 65px;
+	}
+}
