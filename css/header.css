@@ -12,18 +12,8 @@ body {
     padding: 0;
 }
 
-/* Wrapper for the blue background */
-.header_background {
-    width: 100%;
-    background-color: rgb(229, 243, 254);
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    padding: 12px;
-}
-
 /* Wrapper for logo, navigation and login user account */
-.header_wrapper {
+header {
     display: flex;
     justify-content: start;
     align-items: center;
@@ -35,19 +25,19 @@ body {
 
 /********** Logo and Webstie name **********/
 
-header {
+.logo_wrapper {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-header a {
+.logo_wrapper a {
     display: flex;
     align-items: center;
     margin-left: 16px;
 }
 
-header a p {
+.logo_wrapper a p {
     display: inline;
     font-weight: bold;
     font-style: italic;
@@ -102,12 +92,6 @@ nav a {
 nav a:hover {
     color: rgb(73, 156, 230);
 }
-
-/* 
-.reviews li {
-    display: block;
-    background-color: antiquewhite;
-} */
 
 #menu_review {
     padding-right: 0;
@@ -185,18 +169,15 @@ nav a:hover {
 
 @media screen 
   and (min-width: 800px) {
-    
-    .header_background {
-        padding: 0;
-    }
 
-    .header_wrapper {
+
+    header {
         flex-direction: row;
         justify-content: space-around;
     }
 
-    header {
-        width: initial;
+    .logo_wrapper {
+        width: 22%;
     }
 
     nav {
