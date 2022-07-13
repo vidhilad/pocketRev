@@ -34,13 +34,6 @@ body {
     border-radius: 12px;
 }
 
-.extra_content {
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 /********** Logo and Webstie name **********/
 
 header {
