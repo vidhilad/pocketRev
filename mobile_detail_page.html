@@ -1,0 +1,230 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Product detail page</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="./css/detail_page.css">
+		<link rel="stylesheet" href="./css/header.css">
+		<link rel="stylesheet" href="./css/footer.css">
+		<link rel="icon" href="./images/logo.png">
+		<script src="https://kit.fontawesome.com/f6de64d3fc.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+	</head>
+	<body>
+			<!-- header -->
+			<header >
+				<div class="logo_wrapper">
+					<a href="#" id="logo">
+						<img src="images/header/logo.png" alt="logo">
+						<p>PocketRev</p>
+					</a>
+		
+					<div id="login_wrapper_mobile">
+						
+						<a href="#">Login</a>
+						<img src="images/header/account-circle.svg" alt="account">
+						<i id="hamburger_menu" class="fa-solid fa-bars"></i>
+					</div>
+				</div>
+				<nav id="top_nav">
+					<ol>
+						<li id="li_home"><a href="./index.html">Home</a></li>
+		
+						<li><a href="#">New Products</a> </li>
+						<li><a href="./bestBuyers.html">BestBuys</a> </li>
+						<li id="li_review">
+							<a id="menu_review" href="#">Reviews</a>
+							<i class="fa-solid fa-angle-down"></i>
+							<div id="categories">
+								<ul>
+									<li><a href=""> Phones and Tablet</a></li>
+									<li><a href="">Laptop</a></li>
+									<li><a href="">Desktop</a></li>
+									<li><a href="/tv_home.html">Television</a></li>
+									<li><a href="">Video Games</a></li>
+									<li class="bottom_border_initial"><a href="./cameras.html">Cameras</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="bottom_border_initial"><a href="#">Brands</a></li>
+					</ol>
+				</nav>
+		
+				<div id="login_wrapper">
+					<a href="#">Login</a>
+					<img src="images/header/account-circle.svg" alt="account">
+				</div>
+			</header>
+		 <!-- end of header -->
+		<div class = "card-wrapper">
+			<div class = "card">
+				<!-- card left -->
+				<div class = "product-imgs">
+					<div class = "img-display">
+						<div class = "img-showcase">
+							<img src = "./images/Mobile_page/Apple-iPhone13mini.png" alt = "shoe image">
+							<img src = "./images/Mobile_page/iphone_13_2.jpg" alt = "shoe image">
+							<img src = "./images/Mobile_page/iphone_13_4.jpg" alt = "shoe image">
+							<img src = "./images/Mobile_page/iphone_13_3.png" alt = "shoe image">
+						</div>
+					</div>
+					<div class = "img-select">
+						<div class = "img-item">
+							<a href = "#" data-id = "1">
+								<img  src = "./images/Mobile_page/Apple-iPhone13mini.png" alt = "shoe image">
+							</a>
+						</div>
+						<div class = "img-item">
+							<a href = "#" data-id = "2">
+								<img  src = "./images/Mobile_page/iphone_13_2.jpg" alt = "shoe image">
+							</a>
+						</div>
+						<div class = "img-item">
+							<a href = "#" data-id = "3">
+								<img src = "./images/Mobile_page/iphone_13_4.jpg" alt = "shoe image">
+							</a>
+						</div>
+						<div class = "img-item">
+							<a href = "#" data-id = "4">
+								<img src = "./images/Mobile_page/iphone_13_3.png" alt = "shoe image">
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- card right -->
+				<div class = "product-content">
+					<h2 class = "product-title">iphone 13 Mini</h2>
+					<div class = "product-rating">
+						<i class = "fas fa-star"></i>
+						<i class = "fas fa-star"></i>
+						<i class = "fas fa-star"></i>
+						<i class = "fas fa-star"></i>
+						<i class = "far fa-star"></i>
+						<span>4.0(22)</span>
+					</div>
+
+					<div class = "product-price">
+						<p class = "last-price">Old Price: <span>$750.00</span></p>
+						<p class = "new-price">New Price: <span>$600.00 (5%)</span></p>
+					</div>
+
+					<div class = "product-detail">
+						<h2>about this product: </h2>
+						<p>A superbright display in a durable design. Hollywood-worthy video shooting made easy.A lightninh-fast chip.And a big boost in battery lifr you'll notice every day.</p>
+						<p>A more vivid OLED display that's both easier to see in full sunlight and power efficient. With a durable design that's water and dust resistant.</p>
+						<p>Totally advanced cameras.Simply brilliant photos.A huge upgrade for better photos and videos.More light captured with the Wide camera.</p>
+						<p>Senor-shift optical image stabilization. And more detail in dark areas of your photos with the ultra wide camera.</p>
+						<p>Raises the bar for battery life. A big boost in battery life you'll notice everyday. That means more time to watch, game and do more of what you love.</p>
+						<div class="size">
+						<p>Size: </p>
+						<div class="psize">128 GB</div>
+						<div class="psize">256 GB</div>
+						<div class="psize">512 GB</div>
+					</div >
+					<div class="size">
+					<p>Color: </p>
+					<div class="clearfix"></div>
+					<input class="color-btn for-color-1" type="radio" id="color-1" name="color-btn"/>
+					<label class="color-1" for="color-1"></label> 
+					<input class="color-btn for-color-2" type="radio" id="color-2" name="color-btn"/>
+					<label class="color-2" for="color-2"></label> 
+					<input class="color-btn for-color-3" type="radio" id="color-3" name="color-btn"/>
+					<label class="color-3" for="color-3"></label> 
+					<input class="color-btn for-color-4" type="radio" id="color-4" name="color-btn"/>
+					<label class="color-4" for="color-4"></label> 
+					<input class="color-btn for-color-5" type="radio" id="color-5" name="color-btn"/>
+					<label class="color-5" for="color-5"></label> 
+					<input class="color-btn for-color-6" type="radio" id="color-6" name="color-btn"/>
+					<label class="color-6" for="color-6"></label> 
+					<div class="clearfix"></div>
+				</div>
+						<ul>
+							<li>Display: <span>5.4-inch Super Retina XDR display</span></li>
+							<li>Network: <span>5G</span></li>
+							<li>Bluetooth: <span>6</span></li>
+							<li>Charging: <span>Wireless</span></li>
+							<li>Privacy: <span>Data privacy</span></li>
+						</ul>
+					</div>
+					<video width="400" controls>
+						<source src="https://youtu.be/k2-Fg7gH8_g" type="video/mp4">
+						Your browser does not support HTML video.
+					</video>
+					<p>
+					<a href="https://youtu.be/k2-Fg7gH8_g" target="_blank">Iphone 13 Mini Unboxing Video</a>.
+					</p>
+					<div class = "purchase-info">
+						<button type = "button" class = "btn">Compare</button>
+					</div>
+					<div class = "social-links">
+						<p>Share: </p>
+						<a href = "#">
+							<i class = "fab fa-facebook-f"></i>
+						</a>
+						<a href = "#">
+							<i class = "fab fa-twitter"></i>
+						</a>
+						<a href = "#">
+							<i class = "fab fa-instagram"></i>
+						</a>
+						<a href = "#">
+							<i class = "fab fa-whatsapp"></i>
+						</a>
+						<a href = "#">
+							<i class = "fab fa-pinterest"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer_detail">
+					 <!-- footer -->
+		<footer class="footer">
+			<div class="footer_main">
+				<h1> <img src="./images/logo.png" alt="logo" id="logo">
+			 PocketReview </h1>     
+			<p>
+				We help customers to select the best products by reviewing the feedbacks of other customers,
+				and buy the best product</p>
+			</div>
+			<ul class="footer_links">
+			<div class="footer-col">
+			<li>
+				<h2> Quick Links</h2>
+			<ul class="box">
+			<li><a href="#">New Products</a></li>
+			<li><a href="#">Best Buyers</a></li>
+			<li><a href="#">Reviews</a></li>
+			</ul>
+			</li>
+		</div>
+		<div class="footer-col">
+			<li>
+				<h2> Extra Links</h2>
+			<ul class="box">
+			<li><a href="#">Brands</a></li>
+			<li><a href="#">Contant Us</a></li>
+			</ul>
+			</li>
+		</div>
+		<div class="footer-col">
+			<li>
+				<h2>Social</h2>
+				<ul class="box">
+				<li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+				<li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+				<li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+				<li><a href="#"><i class="fab fa-youtube"></i> You-Tube</a></li>
+				</ul>
+				</li>
+		</div>
+			</ul>
+			<div class="b-footer">
+			<p>
+			All rights reserved by &copy; PocketReview 2022 </p>
+			</div>
+			</footer>
+		</div>
+	</body>
+</html>
