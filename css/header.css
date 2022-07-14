@@ -1,0 +1,239 @@
+
+/******** Makes positioning easier **********/
+html { 
+    box-sizing: border-box;
+}
+
+*, *:before, *:after { box-sizing: inherit; }
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Wrapper for logo, navigation and login user account */
+header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: lightgray;
+    margin: 12px;
+    flex-direction: column;
+    border-radius: 12px;
+}
+
+/********** Logo and Webstie name **********/
+
+.logo_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo_wrapper a {
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+}
+
+.logo_wrapper a p {
+    display: inline;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0 8px;
+    font-size: 1.8rem;
+}
+
+#logo {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+}
+
+/* Added padding to increase the height of header */
+#logo img {
+    width: 36px;
+    padding: 12px 0;
+}
+
+/********** Central Navigation **********/
+nav {
+    width: 100%;
+    display: none;
+}
+
+nav ol {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+nav li {
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    border-bottom: 2px solid rgb(73, 156, 230);
+}
+
+nav a {
+    width: 100%;
+    text-decoration: none;
+    padding: 12px;
+    color: black;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: rgb(73, 156, 230);
+}
+
+#menu_review {
+    padding-right: 0;
+}
+
+#categories {
+    display: none;
+    background-color: lightgray;
+    position: static;
+    margin-top: 12px;
+    padding: 12px;
+    box-shadow: 2px 2px 10px 2px lightgrey;
+    border-radius: 12px;
+}
+
+#categories ul {
+    list-style-type: none;
+    list-style-position: inside;
+    padding: 0;
+}
+
+#categories ul li {
+    padding: 12px;
+}
+
+/********** User account login **********/
+
+/* Used flex-end to fix a bug in safari browser */
+#login_wrapper {
+    display: none;
+}
+
+#login_wrapper a {
+    padding: 16px 8px;
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+}
+
+#login_wrapper a:hover {
+    color: rgb(73, 156, 230); 
+}
+
+#login_wrapper img {
+    width: 32px;
+    margin-right: 16px;
+}
+
+#login_wrapper_mobile {
+    display: flex;
+}
+
+#login_wrapper_mobile img {
+    width: 32px;
+    margin-right: 16px;
+}
+
+#login_wrapper_mobile a {
+    display: none;
+}
+
+#hamburger_menu {
+    padding: 16px;
+    font-size: 24px;
+    align-self: center;
+}
+
+.bottom_border_initial {
+    border-bottom: initial;
+}
+
+#li_review i:hover {
+    color: var(rgb(73, 156, 230));
+}
+
+@media screen 
+  and (min-width: 800px) {
+
+
+    header {
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .logo_wrapper {
+        width: 22%;
+    }
+
+    nav {
+        flex-grow: 1;
+        display: flex;
+        visibility: visible;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    nav ol {
+        flex-direction: row;
+        align-self: stretch;
+        margin: 0;
+    } 
+
+    nav li {
+        width: auto;
+        padding: 12px;
+        border-bottom: initial;
+    }
+
+    #login_wrapper {
+        flex-basis: 0;
+    }
+
+    #login_wrapper {
+        display: flex;
+        flex-basis: 20%;
+        justify-content: flex-end; 
+    }
+
+    #login_wrapper_mobile {
+        display:none;
+    }
+
+    #hamburger_menu {
+        display: none;
+    }
+
+    #categories {
+        position: absolute;
+    }
+
+    #li_home {
+        display: none;
+    }
+}
+
+@media screen 
+  and (min-width: 1200px) {
+
+    #li_home {
+        display: inline;
+    }
+}
+

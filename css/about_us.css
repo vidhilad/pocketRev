@@ -1,0 +1,128 @@
+@import "main.css";
+
+/********** Main **********/
+
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+section {
+    margin: 24px 0;
+}
+
+main h2 {
+    padding: 16px 0 0px;
+    border-bottom: 2px solid rgb(73, 156, 230);
+}
+
+figure figcaption {
+    text-align: center;
+    padding: 16px 16px 0;
+    font-size: larger;
+}
+
+/********** Mission ***********/
+
+#mission {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#mission p {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 80%;
+    padding: 0 32px;
+    align-self: center;
+}
+
+/*********** What we do **********/
+
+
+#what_we_do blockquote {
+    font-size: 32px;
+    font-weight: bolder;
+    margin-bottom: 0px;
+    color: rgb(73, 156, 230);
+    text-align: center;
+}
+
+#what_we_do p {
+    margin-top: 0px;
+    text-align: center;
+}
+
+#what_we_do img {
+    width: 100%;
+}
+
+#what_we_do figure:hover {
+    color: rgb(73, 156, 230);
+    text-decoration: underline;
+}
+
+.grid_what_we_do {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid_what_we_do figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/********** Who we are **********/
+
+#who_we_are {
+    width: 100%;
+}
+
+#who_we_are figure:hover {
+    color: rgb(73, 156, 230);
+}
+
+#who_we_are img {
+    width: 100%;
+}
+
+.title_expert {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.grid_who_we_are {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: stretch;
+    align-content: stretch;
+}
+
+.grid_who_we_are figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen 
+  and (min-width: 480px) 
+  and (max-width: 640px) {
+
+    #mission p {
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 0 16px;
+    }
+
+    .grid_what_we_do {
+        grid-template-columns: 1fr;
+    }
+
+    .grid_who_we_are {
+        grid-template-columns: 1fr;
+    }
+
+  }
