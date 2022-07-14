@@ -5,6 +5,16 @@ main {
     width: 90%;
     margin: 0 auto;
 }
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.prices a {
+    color: white;
+}
+
 /********** First row of website including author info, image, general info **********/
 .tv_intro_section {
     display: flex;

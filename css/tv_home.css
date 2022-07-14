@@ -12,6 +12,11 @@ main > h1 {
     border-bottom: 2px solid var(--color-primary);
 }
 
+article a {
+    text-decoration: none;
+    color: black;
+}
+
 .latest {
     display: flex;
     flex-direction: column;
@@ -223,6 +228,10 @@ table .single-line-info td {
 
 table tr td:nth-child(-n+6) {
     display: none;
+}
+
+.tv_info a {
+    color: white;
 }
 
 /********** Min width 750px **********/
