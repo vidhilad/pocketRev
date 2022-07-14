@@ -5,43 +5,55 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-    <link rel="stylesheet" href="css/header/header.css">
+    <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/new_prodcuts.css">
 </head>
 
 <body>
-    <div class="header_background">
-        <div class="header_wrapper">
-            <header>
-                <a href="#" id="logo">
-                    <img src="images/header/logo.png" alt="logo">
-                    <p>PocketRev</p>
-                </a>
+  <header >
+    <div class="logo_wrapper">
+        <a href="#" id="logo">
+            <img src="images/header/logo.png" alt="logo">
+            <p>PocketRev</p>
+        </a>
 
-                <div id="login_wrapper_mobile">
-                    <a href="#">Login</a>
-                    <img src="images/header/account-circle.svg" alt="account">
-                </div>
-            </header>
-            <nav>
-                <ol>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="index.html">New Products</a> </li>
-                    <li><a href="#">BestBuys</a> </li>
-                    <li><a href="#">Reviews</a> </li>
-                    <li><a href="#">Brands</a></li>
-                    <li class="nav_last_item"><a href="#">Services</a></li>
-                </ol>
-            </nav>
-    
-            <div id="login_wrapper">
-                <a href="#">Login</a>
-                <img src="images/header/account-circle.svg" alt="account">
-            </div>
+        <div id="login_wrapper_mobile">
             
+            <a href="#">Login</a>
+            <img src="images/header/account-circle.svg" alt="account">
+            <i id="hamburger_menu" class="fa-solid fa-bars"></i>
         </div>
     </div>
+    <nav id="top_nav">
+        <ol>
+            <li id="li_home"><a href="./index.html">Home</a></li>
+
+            <li><a href="#">New Products</a> </li>
+            <li><a href="./bestBuyers.html">BestBuys</a> </li>
+            <li id="li_review">
+                <a id="menu_review" href="#">Reviews</a>
+                <i class="fa-solid fa-angle-down"></i>
+                <div id="categories">
+                    <ul>
+                        <li><a href=""> Phones and Tablet</a></li>
+                        <li><a href="">Laptop</a></li>
+                        <li><a href="">Desktop</a></li>
+                        <li><a href="/tv_home.html">Television</a></li>
+                        <li><a href="">Video Games</a></li>
+                        <li class="bottom_border_initial"><a href="./cameras.html">Cameras</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="bottom_border_initial"><a href="#">Brands</a></li>
+        </ol>
+    </nav>
+
+    <div id="login_wrapper">
+        <a href="#">Login</a>
+        <img src="images/header/account-circle.svg" alt="account">
+    </div>
+</header>
 
     <main>
         <!-- Recent Posts -->
