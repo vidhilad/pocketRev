@@ -1,0 +1,84 @@
+.container {
+    display: grid;
+    margin: 12px auto;
+    min-width: 200px;
+    padding: 1vw;
+}
+
+h1 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+.about {
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
+.form {
+    padding-left: 15vw;
+    padding-right: 15vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.comment {
+    width: 30vw;
+    height: 10vw;
+}
+
+.comment-btn {
+    width: 6vw;
+    height: 4vw;
+    margin: 3px;
+    font-size: 9px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+    html {
+    height: 100%;
+    line-height: 1.15;
+    font-size: 1em;
+    }
+    
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }  
+    
+    .image {
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 850px) {
+    .container {
+        width: 80%;
+    }    
+}
+
+@media only screen and (min-width: 1280px) {
+    #wrapper {
+        font-size: 2em;
+    }
+
+    h1 {
+        font-size: 5em;
+    }
+
+    .comment-btn {
+        font-size: 20px;
+    }
+
+}
+
