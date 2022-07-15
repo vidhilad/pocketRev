@@ -5,45 +5,58 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/desktop.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./images/logo.png">
 </head>
 
 <body>
-    <div class="header_background">
-        <div class="header_wrapper">
-            <header>
-                <a href="#" id="logo">
-                    <img src="images/logo.png" alt="logo">
-                    <p>PocketRev</p>
-                </a>
-
-                <div id="login_wrapper_mobile">
-                    <a href="#">Login</a>
-                    <img src="images/account-circle.svg" alt="account">
-                </div>
-            </header>
-            <nav>
-                <ol>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="index.html">New Products</a> </li>
-                    <li><a href="#">BestBuys</a> </li>
-                    <li><a href="#">Reviews</a> </li>
-                    <li><a href="#">Brands</a></li>
-                    <li class="nav_last_item"><a href="#">Services</a></li>
-                </ol>
-            </nav>
-    
-            <div id="login_wrapper">
-                <a href="#">Login</a>
-                <img src="images/account-circle.svg" alt="account">
-            </div>
-            
-        </div>
-      </div>
-    </div>
+    <!-- header -->
+		<header >
+			<div class="logo_wrapper">
+				<a href="#" id="logo">
+					<img src="images/header/logo.png" alt="logo">
+					<p>PocketRev</p>
+				</a>
+	
+				<div id="login_wrapper_mobile">
+					
+					<a href="#">Login</a>
+					<img src="images/header/account-circle.svg" alt="account">
+					<i id="hamburger_menu" class="fa-solid fa-bars"></i>
+				</div>
+			</div>
+			<nav id="top_nav">
+				<ol>
+					<li id="li_home"><a href="./index.html">Home</a></li>
+	
+					<li><a href="#">New Products</a> </li>
+					<li><a href="#">BestBuys</a> </li>
+					<li id="li_review">
+						<a id="menu_review" href="#">Reviews</a>
+						<i class="fa-solid fa-angle-down"></i>
+						<div id="categories">
+							<ul>
+								<li><a href=""> Phones and Tablet</a></li>
+								<li><a href="">Laptop</a></li>
+								<li><a href="desktop.html">Desktop</a></li>
+								<li><a href="/tv_home.html">Television</a></li>
+								<li><a href="">Video Games</a></li>
+								<li class="bottom_border_initial"><a href="./cameras.html">Cameras</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="bottom_border_initial"><a href="#">Brands</a></li>
+				</ol>
+			</nav>
+	
+			<div id="login_wrapper">
+				<a href="#">Login</a>
+				<img src="images/header/account-circle.svg" alt="account">
+			</div>
+		</header>
 
     <!-- main menu -->
         <!-- Recent Posts -->
@@ -66,7 +79,7 @@
         
       <div class="card">
               <div class="imgdesktop">
-          <img src="./images/3.jpg" alt="">
+          <img src="./images/Desktop/3.jpg" alt="">
       </div>
       <div class="content-desktop">
         <div class="desktopname">
@@ -91,7 +104,7 @@
     <!-- second desktop -->
     <div class="card">
       <div class="imgdesktop">
-          <img src="./images/4.jpg" alt="">
+          <img src="./images/Desktop/4.jpg" alt="">
       </div>
       <div class="content-desktop">
         <div class="desktopname">
@@ -115,7 +128,7 @@
     <!-- third desktop -->
     <div class="card">
       <div class="imgdesktop">
-          <img src="./images/5.jpg" alt="">
+          <img src="./images/Desktop/5.jpg" alt="">
       </div>
       <div class="content-desktop">
         <div class="desktopname">
@@ -137,7 +150,7 @@
       </div>
       <div class="card">
         <div class="imgdesktop">
-            <img src="./images/6.jpg" alt="">
+            <img src="./images/Desktop/6.jpg" alt="">
         </div>
         <div class="content-desktop">
           <div class="desktopname">
@@ -161,7 +174,7 @@
       <!-- second desktop -->
       <div class="card">
         <div class="imgdesktop">
-            <img src="./images/7.jpg" alt="">
+            <img src="./images/Desktop/7.jpg" alt="">
         </div>
         <div class="content-desktop">
           <div class="desktopname">
@@ -186,7 +199,7 @@
       <!-- third desktop -->
       <div class="card">
         <div class="imgdesktop">
-            <img src="./images/8.jpg" alt="">
+            <img src="./images/Desktop/8.jpg" alt="">
         </div>
         <div class="content-desktop">
           <div class="desktopname">
@@ -210,7 +223,7 @@
         
   <div class="card">
           <div class="imgdesktop">
-      <img src="./images/apple_imac_24.jpg" alt="">
+      <img src="./images/Desktop/apple_imac_24.jpg" alt="">
   </div>
   <div class="content-desktop">
     <div class="desktopname">
@@ -234,7 +247,7 @@
 <!-- second desktop -->
 <div class="card">
   <div class="imgdesktop">
-      <img src="./images/2.jpg" alt="">
+      <img src="./images/Desktop/2.jpg" alt="">
   </div>
   <div class="content-desktop">
     <div class="desktopname">
@@ -257,7 +270,7 @@
 <!-- third desktop -->
 <div class="card">
   <div class="imgdesktop">
-      <img src="./images/apple_imac_24.jpg" alt="">
+      <img src="./images/Desktop/apple_imac_24.jpg" alt="">
   </div>
   <div class="content-desktop">
     <div class="desktopname">
@@ -279,7 +292,7 @@
   </div>
   <div class="card">
     <div class="imgdesktop">
-        <img src="./images/apple_imac_24.jpg" alt="">
+        <img src="./images/Desktop/apple_imac_24.jpg" alt="">
     </div>
     <div class="content-desktop">
       <div class="desktopname">
@@ -303,7 +316,7 @@
   <!-- second desktop -->
   <div class="card">
     <div class="imgdesktop">
-        <img src="./images/apple_imac_24.jpg" alt="">
+        <img src="./images/Desktop/apple_imac_24.jpg" alt="">
     </div>
     <div class="content-desktop">
       <div class="desktopname">
@@ -326,7 +339,7 @@
   <!-- third desktop -->
   <div class="card">
     <div class="imgdesktop">
-        <img src="./images/apple_imac_24.jpg" alt="">
+        <img src="./images/Desktop/apple_imac_24.jpg" alt="">
     </div>
     <div class="content-desktop">
       <div class="desktopname">
@@ -347,59 +360,6 @@
        
 </div>
 
-
-
-
-<div class ="top"><span>Meet Our Team</span></div>
-<div class="wrap">
-     
-    <div class="box">
-         
-        <img src ="img2.jpg">
-        <div class="social">
-        <a href="#"><i class ="fa fa-facebook"></i></a>
-            <a href="#"><i class ="fa fa-twitter"></i></a>
-        <a href="#"><i class ="fa fa-youtube"></i></a>
-            <a href="#"><i class ="fa fa-linkedin"></i></a>
-        <a href="#"><i class ="fa fa-instagram"></i></a>
-        </div>
-        <div class="text">
-        <h1>Krishtina Kunal</h1>
-            <p> App Developer</p>
-        </div>
-    </div>
-     
-    <div class="box">
-         
-        <img src ="./images/2.jpg">
-        <div class="social">
-        <a href="#"><i class ="fa fa-facebook"></i></a>
-            <a href="#"><i class ="fa fa-twitter"></i></a>
-        <a href="#"><i class ="fa fa-youtube"></i></a>
-            <a href="#"><i class ="fa fa-linkedin"></i></a>
-        <a href="#"><i class ="fa fa-instagram"></i></a>
-        </div>
-        <div class="text">
-        <h1>John Doe</h1>
-            <p> UI Designer</p>
-        </div>
-    </div>
-     
-    <div class="box">
-         
-        <img src ="img3.jpg">
-        <div class="social">
-        <a href="#"><i class ="fa fa-facebook"></i></a>
-            <a href="#"><i class ="fa fa-twitter"></i></a>
-        <a href="#"><i class ="fa fa-youtube"></i></a>
-            <a href="#"><i class ="fa fa-linkedin"></i></a>
-        <a href="#"><i class ="fa fa-instagram"></i></a>
-        </div>
-        <div class="text">
-        <h1>Deepk Adhikari</h1>
-            <p> Project Manager</p>
-        </div>
-    </div>
 </div>
    
     <!-- Footer -->
