@@ -1,0 +1,227 @@
+/*css for html*/
+html{
+    background-color: rgb(54, 53, 53);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*css for body*/
+body{
+    background-color: whitesmoke;
+    width: auto;
+    height:200%;
+    margin-left: 10%;
+    margin-right:10%;
+    margin-bottom:1%;
+    box-shadow: 5px 4px burlywood;
+}
+
+/*css for the container*/
+.container{
+    background-color:white;
+}
+
+/*css for content1*/
+.content1{
+    background: white;
+    border: 1px solid wheat;
+}
+
+/*css for header1*/
+.header1{
+    display:flex;
+    justify-content: center;
+    color:black;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: bold;
+    text-shadow: 3px 1px 1px black;
+}
+
+/*css for header1 with hover*/
+.header1:hover{
+    color:goldenrod;
+}
+
+/*css for map*/
+.map{
+    display: flex;
+    justify-content: center;
+    background-color:bisque ;
+}
+
+/*css for content 2*/
+.content2 {
+    background: white url("../images/bg_3.jpg") no-repeat;
+    background-size: 2000px 1000px;
+    margin-left: 30px;
+    margin-right:30px;
+    margin-top: 45px;
+    box-shadow: 3px 5px black;
+    border: 1px solid burlywood;
+}
+
+/*css for header 2*/
+.header2{
+    display: flex;
+    justify-content: center;
+    color:white;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: bold;
+    text-shadow: 3px 1px 0px white;
+}
+
+/*css for header 2 with hover*/
+.header2:hover{
+    color:goldenrod;
+}
+
+/*css for customer form*/
+.customer_form{
+    display: flex;
+    justify-content: center;
+    margin-left: 35%;
+    margin-right: 100%;
+    border: 2px double black;
+    padding:30px;
+    background-color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.customer_form:hover{
+    background-color:bisque;
+}
+/*css for customer form for legend*/
+.customer_form legend{
+    color:black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+}
+
+/*css for customer form for legend with hover effect*/
+.customer_form legend:hover{
+    color:goldenrod;
+}
+
+/*css for customer form for legend with focus effect*/
+.customer_form legend:focus{
+    color:goldenrod;
+}
+
+/*css for each label*/
+.form>label{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+/*css for each select*/
+.select{
+    text-align: center;
+    padding-left: 22%;
+}
+
+/*css for the form*/
+.form{
+    text-align: right;
+    margin-bottom: 0.5em;
+    padding-right: 25%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+/*css for input for each input with hover effect*/
+.form>input:hover{
+    background-color: gold;
+}
+
+/*css for input for each input with focus effect*/
+.form>input:focus{
+    background-color: gold;
+}
+
+/*css for customer_form for text area*/
+.customer_form textarea{
+    text-align: left;
+}
+
+/*css for suggests for paragraph*/
+.suggests p{
+    text-align: left;
+    padding-left: 37.8%;
+    line-height: 0.5px;
+}
+
+/*css for suggests for textarea*/
+.suggests textarea{
+    margin-left: 22%;
+}
+
+/*css for button_form*/
+.button_form{
+    display: block;
+    margin-top: 90%;
+}
+
+/*css for button_form for each input*/
+.button_form input{
+    margin-left: -340%;
+    margin-top: -20px;
+    padding: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: black;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+/*css for button_form for each input for hover effect*/
+.button_form input:hover{
+    background-color: goldenrod;
+    color:white;
+    border: 1px solid goldenrod;
+}
+
+/*css for content 3*/
+.content3{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 2px;
+    background-color: burlywood;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    color:white;
+    padding: 10px;
+}
+
+/*css for content 3 for each a with hover effect*/
+.content3 a:hover{
+    color:black;
+    font-size: 25px;
+}
+
+/*css for content 3 for each a with focus effect*/
+.content3 a:focus{
+    color:black;
+    font-size: 25px;
+}
+
+/*css for i inside the marquee tag along with hover and focus effect*/
+.content3 marquee>i{
+    text-align: center;
+    padding-left: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.content3 marquee>i:hover{
+    color:black;
+    font-size: 25px;
+}
+.content3 marquee>i:focus{
+    color:black;
+    font-size: 25px;
+}

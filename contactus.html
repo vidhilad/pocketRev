@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Title for the brands contact us page-->
+        <title>
+            Lets start a conversation!Shall we?
+        </title>
+        <!--Link and meta tag for the form page-->
+        <link rel="stylesheet" href="./css/contactus.css" />
+        <link rel="stylesheet" href="./css/footer.css" />
+        <link rel="stylesheet" href="./css/header.css" />
+        <link rel="icon" type="image/icon" href="/images/header/favicon.ico">
+        <script src="https://kit.fontawesome.com/f6de64d3fc.js" crossorigin="anonymous"></script>
+
+        <meta charset="utf-8" />
+        <meta name="description" content="Wanna get the problem solved quickly!!!" />
+        <meta name="keywords" content="first name,last name, phone, comment, address, map, email,country" />
+    </head>
+    <body>
+        <header >
+            <div class="logo_wrapper">
+                <a href="#" id="logo">
+                    <img src="images/header/logo.png" alt="logo">
+                    <p>PocketRev</p>
+                </a>
+    
+                <div id="login_wrapper_mobile">
+                    
+                    <a href="#">Login</a>
+                    <img src="images/header/account-circle.svg" alt="account">
+                    <i id="hamburger_menu" class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <nav id="top_nav">
+                <ol>
+                    <li id="li_home"><a href="./index.html">Home</a></li>
+                    <li><a href="./new_products.html">New Products</a> </li>
+                    <li><a href="./bestBuyers.html">BestBuys</a> </li>
+                    <li id="li_review">
+                        <a id="menu_review" href="#">Reviews</a>
+                        <i class="fa-solid fa-angle-down"></i>
+                        <div id="categories">
+                            <ul>
+                                <li><a href="./mobile_tablets.html"> Phones and Tablet</a></li>
+                                <li><a href="./laptop.html">Laptop</a></li>
+                                <li><a href="">Desktop</a></li>
+                                <li><a href="/tv_home.html">Television</a></li>
+                                <li><a href="">Video Games</a></li>
+                                <li class="bottom_border_initial"><a href="./cameras.html">Cameras</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bottom_border_initial"><a href="./brands.html">Brands</a></li>
+                </ol>
+            </nav>
+    
+            <div id="login_wrapper">
+                <a href="./login.html">Login</a>
+                <img src="images/header/account-circle.svg" alt="account">
+            </div>
+        </header>
+        <!--Main container-->
+        <div class="container">
+            <!--Container for content 1-->
+            <div class="content1">
+                <!--Header part-->
+                <header class="header1">
+                    <h2>Wanna know where the magic happens?</h2>
+                </header>
+                <!--End of Header part-->
+                <!--Map for the content 1-->
+                <section class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2879.5240003548174!2d-79.30337394889794!3d43.80348927901393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d3e7e454c0f5%3A0xfd3e289037b8f810!2s202%20Silver%20Springs%20Blvd%2C%20Scarborough%2C%20ON%20M1V%201G5!5e0!3m2!1sen!2sca!4v1656548629176!5m2!1sen!2sca" width="1380.8" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+                <!--End of content 1-->
+            </div>
+            <!--Container for content 2-->
+            <div class="content2">
+                <!--Header part-->
+                <header class="header2">
+                    <h2>Give us a chance, You will not be disappointed :)</h2>
+                </header>
+                <!--End of header part-->
+                <!--Form-->
+                <form name="" action="ready_set_go.php" method="get">
+                    <!--Form contents-->
+                    <fieldset class="customer_form">
+                        <legend>Connect with us!!!</legend>
+                        <div class="form">
+                        <!--First name-->
+                        First Name:<input type="text" name="fname" id="fname" autocomplete="fname" pattern="^([a-zA-Z]{2,}\s[a-zA-Z]{1,}'?-?[a-zA-Z]{2,}\s?([a-zA-Z]{1,})?)" placeholder="Enter only first name" required><br>
+                        <label for="fname"></label><br>
+                        <!--Last name-->
+                        Last Name:<input type="text" name="lname" id="lname" autocomplete="lname" pattern="^([a-zA-Z]{2,}\s[a-zA-Z]{1,}'?-?[a-zA-Z]{2,}\s?([a-zA-Z]{1,})?)" placeholder="Enter only last name" required><br>
+                        <label for="lname"></label><br>
+                        <!--Phone number-->
+                        Phone Number:<input type="number" autocomplete="number"  name="number" id="number" required><br>
+                        <label for="number"></label><br>
+                        <!--Email-->
+                        E-Mail:<input type="email" name="email" id="email"  autocomplete="email" required>
+                        <label for="email"></label><br><br>
+                        <!--Selection for country-->
+                        <div class="select">
+                            Country:<select id="country" name="country">
+                                <option value="canada">Canada</option>
+                                <option value="spain">Spain</option>                                
+                                <option value="germany">Germany</option>
+                                <option value="africa">Africa</option>
+                                <option value="india">India</option>
+                                <option value="ireland">Ireland</option>
+                                <option value="japan">Japan</option>
+                                <option value="scotland">Scotland</option>
+                            </select>
+                            <label for="country"></label><br><br>
+                        </div>
+                        <!--Address-->
+                        Address:<input type="text" id="street-address" name="street-address" autocomplete="street-address" required enterkeyhint="next"><br>
+                        <label for="street-address"></label><br>
+                        <!--Postal code-->
+                        Postal Code:<input type="text" placeholder="Zip Code" title="Please enter a Zip Code"  autocomplete="postcode" name="postcode" id="postcode" pattern="^\s*?\d{5}(?:[-\s]\d{4})?\s*?$"><br>
+                        <label for="postcode"></label><br>
+
+                        <!--<div class="check">
+                        <input type="checkbox" name="agreed" id="agreed" value="agreed">
+                        <label for="agreed">YES, I'd would like to receive information about new products.</label>
+                        </div>-->
+
+                        <!--Form suggestion box-->
+                        <div class="suggests">
+                        <p>Suggestions:</p><textarea id="suggest" placeholder="We would like to listen to your suggestions!! " rows="4" cols="50" ></textarea></div>
+                        <label for="suggest"></label></div><br>
+                        <!--Form button-->
+                        <div class="button_form">
+                            <input type="button" name="submit" value="Submit"><br>
+                        </div>        
+                    </fieldset><br>
+                </form><br>
+                <!--End of form-->
+            </div>
+            <div class="content3">
+                <marquee><i>Contact Us On</i>:<br><a href = "mailto:pocketrev@gmail.com?subject = Connect and know what more we offer!!? = Message">
+                   pocketrev@gmail.com
+                </a></marquee>
+                <!--<p>&copy;Copyright terms and conditions apply.</p>--><br>
+            </div>
+            <!--Footer of the brands page-->
+            <footer class="footer">
+                <div class="footer_main">
+                    <h1> <img src="./images/header/logo.png"  id="logomain" alt="logo">
+                 PocketReview </h1>     
+                <p>
+                    We help customers to select the best products by reviewing the feedbacks of other customers,
+                    and buy the best product</p>
+                </div>
+                <ul class="footer_links">
+                <li class="footer-col">
+                  <h2> Quick Links</h2>
+                <ul class="box">
+                <li><a href="./new_products.html">New Products</a></li>
+                <li><a href="./bestBuyers.html">Best Buyers</a></li>
+                <li><a href="#">Reviews</a></li>
+                </ul>
+                </li>
+                <li class="footer-col">
+                  <h2> Extra Links</h2>
+                <ul class="box">
+                <li><a href="./brands.html">Brands</a></li>
+                <li><a href="./contactus.html">Contant Us</a></li>
+                <li><a href="./about_us.html">About Us</a></li>
+          
+                </ul>
+                </li>
+                <li class="footer-col">
+                    <h2>Social</h2>
+                  <ul class="box">
+                  <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                  <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                  <li><a href="#"><i class="fab fa-youtube"></i> You-Tube</a></li>
+                  </ul>
+                  </li>
+                </ul>
+                <div class="b-footer">
+                <p>
+                All rights reserved by &copy; PocketReview 2022 </p>
+                </div>
+            </footer><!--End-->
+        <!--End of footer-->
+        <script src="./js/header.js"></script>
+
+            </div>
+    </body>
+</html>
