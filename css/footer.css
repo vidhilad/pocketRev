@@ -4,7 +4,7 @@
   } 
   /* footer box styling */
   .footer {
-  margin-top: 12em;
+  /* margin-top: 12em; */
   display: flex;
   font-family: 'Poppins', sans-serif;
   flex-flow: row wrap;
