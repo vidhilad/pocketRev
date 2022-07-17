@@ -11,27 +11,38 @@
         <div class="contact-box">
             <div class="left"></div>
             <div class="right">
-                <form>
+                <form action="#" onsubmit="return validation()">
                     <h2>Sign UP</h2>
+                    
                     <label class="lable_name">First Name:</label>
-                    <input type="text" class="field" placeholder="First Name">	
+                    <input type="text" class="field" placeholder="First Name" name="fname" id="fname">	
+                    <span id="firstName"></span>
+                   <br><br>
                     <label class="lable_name">Last Name:</label>
-                    <input type="text" class="field" placeholder="Last Name">
+                    <input type="text" class="field" placeholder="Last Name" name="lname" id="lname">
+                    <span id="lastName"></span>
+                    <br><br>
                     <label class="lable_name">Email ID:</label>
-                    <input type="text" class="field" placeholder="Your Email">
+                    <input type="text" class="field" placeholder="Your Email" name="email" id="email">
+                    <span id="emailId"></span>
+                    <br><br>
                     <label class="lable_name">Phone Number:</label>
-                    <input type="text" class="field" placeholder="Phone">
+                    <input type="text" class="field" placeholder="Phone" name="phone" id="phone">
+                    <span id="phoneNumber"></span>
+                    <br><br>
                     <label class="lable_name">Password:</label>
-                    <input type="text" class="field" placeholder="Password">
+                    <input type="text" class="field" placeholder="Password" name="password" id="password">
+                    <span id="pass"></span>
+                    <br><br>
                     <label class="lable_name">Confirm Password:</label>
-                    <input type="text" class="field" placeholder="Confirm Passowrd">
-                    <button class="btn">SignUp!</button>
-                    <div>Already a Member? 
-                        <a href="">Login</a>
-                    </div>
+                    <input type="text" class="field" placeholder="Confirm Passowrd" name="conformPass" id="conformPass">
+                    <span id="conPass"></span>
+                    <br><br>
+                    <button class="btn" id="signUp" >SignUp!</button>
                  </form>
             </div>
         </div>
     </div>
+    <script src="./js/signUp.js"></script>
 </body>
 </html>
