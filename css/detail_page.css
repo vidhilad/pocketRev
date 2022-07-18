@@ -145,7 +145,7 @@ img{
 	transition: all 0.5s ease;
 }
 .social-links a:hover{
-	background: #000;
+background: #000;
 	border-color: transparent;
 	color: #fff;
 }   
