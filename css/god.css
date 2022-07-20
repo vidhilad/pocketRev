@@ -1,0 +1,75 @@
+.heading h1{
+    margin-left: 150px;
+    font-size: 50px;
+}
+.heading{
+    margin-top: -16px;
+    text-align: center;
+}
+main{
+    width: 1000px;
+    margin-left: 50px;
+}
+#revphoto{
+    margin-left: 100px;
+
+}
+.pros{
+    line-height: 40px;
+    border:2px solid darkgrey;
+    border-radius: 20px;
+    padding: 10px 10px;
+}
+.pros li{
+    list-style: none;
+}
+.cons li{
+    list-style: none;
+}
+.cons{
+    line-height: 40px;
+    padding: 10px 10px;
+    list-style: none;
+    border:2px solid darkgrey;
+    border-radius: 20px;
+}
+.row{
+    margin-top: 40px;
+    display: flex;
+    margin-left: 150px;
+    gap: 40px;
+
+}
+.review-para{
+    width: 900px;
+    text-align: center;
+    margin-left: 150px;
+    font-size: 20px;
+}
+.row1{
+    margin-top: 40px;
+    display: flex;
+    margin-left: 150px;
+    gap: 40px;
+}
+aside{
+    width: 250px;
+    /* margin-left: 450px; */
+    border-bottom: 2px solid grey;
+    /* padding-bottom: ; */
+}
+aside h2{
+    color: red;
+    font-size: 18px;
+}
+#teac{
+    color:rgb(65, 65, 65);
+    font-weight: lighter;
+    text-transform: uppercase;
+    margin-left: 150px;
+    text-align: center;
+    font-size: 25px;
+}
+body{
+    background-color:whitesmoke;
+}

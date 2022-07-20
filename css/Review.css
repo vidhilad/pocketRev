@@ -1,0 +1,188 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+main{
+    background-color: #24262b;
+}
+body{
+    background-color: #24262b;
+}
+.mx3s{
+    float:left;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    padding: 2px;
+}
+.second-header{
+    padding: 20px 40px;
+    background-color: #c3c3c3;
+    text-align: center;
+}
+
+.box1{
+    background-image: linear-gradient(to right, lightblue, darkgray);
+    border-radius: 25px;
+    height: 400px;
+    /* background-color: lightgray; */
+    margin-top: 20px;
+    margin-bottom: 30px
+    
+}
+
+.box2{
+    background-image: linear-gradient(to right, lightblue, lightgray);
+    clear: both;
+    border-radius:25px;
+    background-color: lightgray;
+    padding-bottom: 200px;
+}
+.p2{
+    float: right;
+}
+.lenovo1{
+    /* margin-right: 10px;
+    margin-bottom:5px;
+    padding: 2px; */
+}
+.p1{
+    border-radius:2px;
+    font-size: larger;
+    line-height: 1.5;
+    width: 1000px;
+    float:right;
+}
+.p{
+    width: 500px;
+    font-size: larger;
+    line-height: 1.5;
+    float: left;
+}
+.specs{
+    background-image: linear-gradient(to right, lightblue, darkgray);
+    border-radius: 15px;
+    background-color: #a4a5a6;
+    float: left;
+    width: 250px;
+    font-family: sans-serif;
+    padding-left: 30px;
+
+}
+.li0{
+    font-weight: bold;
+    color: black;
+    float: left;
+    font-size: 20px;
+    line-height: normal;
+}
+
+.heading,.heading1,.p,.p1{
+    font-family: sans-serif;
+}
+
+
+.heading{
+    color:rgb(164, 164, 164);
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.heading1{
+    text-align: center;
+    font-size: 40px;
+    color: darkblue
+}
+
+main{
+    float: left;
+    width: 1250px;
+}
+aside{
+    line-height: 40px;
+    margin:15px 10px;
+    float: right;
+    padding-left: 40px;
+    border:solid blueviolet 5px;
+    background-color: lightgray;
+    width: 230px;
+}
+h4{
+    color: purple;
+    margin: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 28px;
+}
+a{
+    text-decoration: none;
+
+}
+a:hover{
+    color: red;
+    cursor: pointer;
+}
+h4::after{
+        content: "New Arrivals";
+        background-color: #ffe70c;
+        font-size: 16px;
+        font-weight: bold;
+        color:black;
+        padding: 5px 10px;
+        position: absolute;
+        top: -50px;
+        left: -80px;
+}
+li{
+    font-size: 24px;
+    color: rgb(75, 42, 1);
+    line-height: 50px;
+}
+.specs{
+
+}
+.container1{
+    margin-top: 10px;
+  border-top: solid black 5px;
+  width: 1000px;
+  height: 890px;
+  /* border-bottom: solid black 5px; */
+  margin-bottom: 30px;
+}
+h3{
+    
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: center;
+    color: white;
+    font-size: 38px;
+}
+h5{
+    margin-left: 60px;
+    color: #a4a5a6;
+    font-size: 25px;
+}
+.macbook-img{
+    margin-top: -20;
+    margin-left: 40px;
+}
+h6{
+    margin-top:20px;
+    color: #a4a5a6;
+    text-align: center;
+    font-size: 28px;
+}
+.cont{
+    border-bottom: solid white 2px;
+   border-top: solid white 1px;
+}
+p{
+    color: #c3c3c3;
+    font-size: 18px;
+}
+.video{
+    padding: 40px;
+    width: 700px;
+    height: 600px;
+}
+
