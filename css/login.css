@@ -55,12 +55,7 @@ form{
 
 .login-content h2{
 	margin: 15px 0;
-  background: #1422E3;
-  background: -webkit-linear-gradient(to right, #1422E3 13%, #C21411 87%);
-  background: -moz-linear-gradient(to right, #1422E3 13%, #C21411 87%);
-  background: linear-gradient(to right, #1422E3 13%, #C21411 87%);
-  /* -webkit-background-clip: text; */
-  -webkit-text-fill-color: transparent;
+	color: #413e73;
 	text-transform: uppercase;
 	font-size: 1.9rem;
 }
