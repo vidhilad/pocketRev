@@ -107,6 +107,11 @@ figure figcaption {
     align-items: center;
 }
 
+/* .grid_who_we_are img {
+    width: 200px;
+    height: 350px;
+} */
+
 @media only screen 
   and (min-width: 480px) 
   and (max-width: 640px) {
