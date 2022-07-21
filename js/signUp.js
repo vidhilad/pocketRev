@@ -5,26 +5,26 @@ function validation() {
     let phone = document.getElementById('phone').value;
     let password = document.getElementById('password').value;
     let conformPass = document.getElementById('conformPass').value;
-    let namepattern = /^[a-zA-Z]$/;
+    let namepattern = /^[a-zA-Z]+$/;
 
     if (fname == "") {
         document.getElementById('firstName').innerHTML = " **Please fill the first name field";
         return false;
     }
-    // else if(!namepattern.test(fname.value)){
-    //     document.getElementById('firstName').innerHTML='Pelase enter letters only';
-    //     return false;
-    //   }
+    else if(!namepattern.test(fname)){
+        document.getElementById('firstName').innerHTML='Pelase enter letters only';
+        return false;
+      }
       
     if (lname == "") {
         document.getElementById('lastName').innerHTML = " **Please fill the last name field";
         return false;
     }
 
-    // else if(!namepattern.test(lname.value)){
-    //     document.getElementById('lastName').innerHTML='Pelase enter letters only';
-    //     return false;
-    //   }
+    else if(!namepattern.test(lname)){
+        document.getElementById('lastName').innerHTML='Pelase enter letters only';
+        return false;
+      }
     if (email == "") {
         document.getElementById('emailId').innerHTML = " **Please fill the email field";
         return false;
