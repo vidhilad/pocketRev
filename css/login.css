@@ -81,6 +81,7 @@ form{
 	font-weight: 700;
 	width: 75%;
 	transition: .2s;
+	text-transform: uppercase;
 }
 
 .login__input:active,
@@ -229,3 +230,19 @@ form .signup-link a:hover{
 		justify-content: center;
 	}
 }	
+small 
+{
+	
+	color:rgb(132, 45, 19);
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-weight: bold;
+	
+}
+small 
+{
+	
+	color:rgb(132, 45, 19);
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-weight: bold;
+
+}
