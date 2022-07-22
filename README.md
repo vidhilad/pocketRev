@@ -7,9 +7,13 @@
 # Team Members & Contributions:
 
 ## Hardi Majmundar
-- Bestbuy - 
-- Signup - Javascript Form validation
--
+- Signup - Completed responsive page with form validation and after submitting form redirecting to login page.
+
+- Bestbuy 
+- Mobile and tablet Page 
+- detail Page of the Mobile 
+
+
 ## Santosh Dhakal
 -
 -
