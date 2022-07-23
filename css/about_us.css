@@ -1,5 +1,15 @@
 @import "main.css";
 
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
 /********** Main **********/
 
 main {
@@ -35,7 +45,7 @@ figure figcaption {
     font-size: 1.5rem;
     text-align: center;
     width: 80%;
-    padding: 0 32px;
+    padding: 0 16px;
     align-self: center;
 }
 
@@ -66,7 +76,7 @@ figure figcaption {
 
 .grid_what_we_do {
     display: grid; 
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 
 .grid_what_we_do figure {
@@ -96,7 +106,7 @@ figure figcaption {
 
 .grid_who_we_are {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     justify-content: stretch;
     align-content: stretch;
 }
@@ -107,27 +117,144 @@ figure figcaption {
     align-items: center;
 }
 
-/* .grid_who_we_are img {
-    width: 200px;
+video {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.5;
+}
+
+.intro_anim {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.intro_anim p#website_name {
+    font-size: 10vw;
+    opacity: 1;
+    animation-name: intro;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    margin: 0;
+}
+
+.intro_anim p#tagline {
+    width: 50%;
+    height: 150px;
+    font-size: 2.5rem;
+    opacity: 0;
+    text-align: center;
+}
+
+.intro_anim img {
+    width: 150px;
+    animation-name: fade_in;
+    animation-duration: 1s;
+    animation-delay: 1000ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.intro_anim i {
+    font-size: 3rem;
+    position: absolute;
+    top: 90vh;
+    left: 48vw;
+    opacity: 0;
+}
+
+.intro_anim p#tagline {
     height: 350px;
-} */
+}
 
-@media only screen 
-  and (min-width: 480px) 
-  and (max-width: 640px) {
+.intro_anim p#website_name {
+    font-size: 15vw;
+}
 
-    #mission p {
-        font-size: 1.5rem;
-        text-align: center;
-        padding: 0 16px;
-    }
+@media only screen and (min-width: 800px) {
 
     .grid_what_we_do {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     .grid_who_we_are {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
-  }
+    #mission p {
+        padding: 0 32px;
+    }
+
+    .intro_anim p#tagline {
+        height: 150px;
+    }
+    
+    .intro_anim p#website_name {
+        font-size: 10vw;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .grid_what_we_do {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .grid_who_we_are {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+/* Keyfrome animations for intro  */
+@keyframes fade_in {
+    form {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes intro {
+    from {
+        transform: translateY(-300px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes tagLine {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    25%,
+    50%,
+    100% {
+        transform: (translateY(0));
+        opacity: 1;
+    }
+}
