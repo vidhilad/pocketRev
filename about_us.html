@@ -14,9 +14,25 @@
       src="https://kit.fontawesome.com/f6de64d3fc.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
-
   <body>
+    <!-- Background vido at the beginning -->
+    <video src="./videos/about_us/about_us_movie.mp4" autoplay muted loop>
+    </video>
+
+    <!-- Overlay on top of video to make text stand out -->
+    <div class="overlay"></div>
+
+    <!-- Text with animation on top of overlay -->
+    <div class="intro_anim">
+        <img src="./images/logo.png" alt="Logo">
+        <p id="website_name">POCKETREV</p>
+        <p id="tagline">tagline</p>
+        
+        <i id="down_arrow" class="fa-solid fa-angle-down"></i>
+    </div>
+
     <header >
       <div class="logo_wrapper">
           <a href="#" id="logo">
@@ -132,7 +148,7 @@
               <span class="title_expert">Camera Expert</span>
             </figcaption>
             <img
-              src="./images/about_us/placeholder_person.png"
+              src="./images/about_us/members/alfred.jpg"
               alt="Team member image"
             />
           </figure>
@@ -143,7 +159,7 @@
               <span class="title_expert"> Video Games Expert</span>
             </figcaption>
             <img
-              src="./images/about_us/placeholder_person.png"
+              src="./images/about_us/members/ashish.jpg"
               alt="Team member image"
             />
           </figure>
@@ -154,7 +170,7 @@
               <span class="title_expert">Mobile and Tablet Expert</span>
             </figcaption>
             <img
-              src="./images/about_us/placeholder_person.png"
+              src="./images/about_us/members/hardi.jpg"
               alt="Team member image"
             />
           </figure>
@@ -165,7 +181,7 @@
               <span class="title_expert">Desktop Expert </span>
             </figcaption>
             <img
-              src="./images/about_us/placeholder_person.png"
+              src="./images/about_us/members/janki.jpg"
               alt="Team member image"
             />
           </figure>
@@ -176,7 +192,7 @@
               <span class="title_expert">Television Expert </span>
             </figcaption>
             <img
-              src="./images/about_us/placeholder_person.png"
+              src="./images/about_us/members/santosh.jpg"
               alt="Team member image"
             />
           </figure>
@@ -187,17 +203,13 @@
               <span class="title_expert">Laptop Expert</span>
             </figcaption>
             <img
-              src="./images/about_us/placeholder_person.png"
+              src="./images/about_us/members/vidhi.jpg"
               alt="Team member image"
             />
           </figure>
         </div>
       </section>
 
-      <!-- <section>
-            <h2>How we test</h2>
-
-        </section> -->
     </main>
 
     <footer class="footer">
@@ -243,5 +255,7 @@
 		</footer>
 
     <script src="./js/header.js"></script>
+
+    <script src="./js/about_us.js"></script>
   </body>
 </html>
