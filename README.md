@@ -1,6 +1,7 @@
 # Project Name: PocketRev
 
-# Description: It’s rare these days for a consumer to buy a product without doing any prior research. The purpose of the website is providing information of daily used gadgets under one roof. Users can check each and every product and can also review to the feedbacks of customer who had purchase the particular product before. Users can get information about the various price range, functionalities of products, best sellers, and latest products and select the product according to their requirement.
+# Description: 
+It’s rare these days for a consumer to buy a product without doing any prior research. The purpose of the website is providing information of daily used gadgets under one roof. Users can check each and every product and can also review to the feedbacks of customer who had purchase the particular product before. Users can get information about the various price range, functionalities of products, best sellers, and latest products and select the product according to their requirement.
 
 # Team Name: Team Hyperlink
 
