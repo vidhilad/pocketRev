@@ -9,10 +9,6 @@ body{
 	line-height: 1.5;
 	background-color: #E6E6E3;
 }
-.card-wrapper{
-	max-width: 1100px;
-	margin: 0 auto;
-}
 img{
 	width: 100%;
 	display: block;
@@ -51,7 +47,7 @@ img{
 	font-weight: 700;
 	position: relative;
 	color: #12263a;
-	padding-top: 40rem;
+	padding-top: 4rem;
 }
 .product-rating span{
 	margin-left: 10px;
@@ -209,23 +205,15 @@ background: #000;
  label.color-6{
    background-color: darkblue;
  }
- .footer_detail{
-	margin-top: 40rem;
- }
 @media screen and (min-width: 992px){
 	.card{
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		grid-gap: 1.5rem;
 	}
-	.card-wrapper{
-		height: 100vh;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
 	.product-imgs{
-		display: flex;
+		margin-top: 10px;
+		margin-left: 10px;
 		flex-direction: column;
 		justify-content: center;
 	} 
