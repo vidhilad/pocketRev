@@ -1,56 +1,64 @@
 <!DOCTYPE html>
 
-<html>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/login.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login form</title>
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="./css/footer.css">
+        <link rel="stylesheet" href="./css/login.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
+    <!-- for container -->
     <div class="container">
+        <!-- background-image -->
         <div class="img">
-          <img src="images/login/jjanki.png">
+          <img src="images/login/jjanki.png" alt="background-image">
         </div>
+		<!-- form content -->
         <div class="login-content">
             <form class="login" action="#" method="get">
-              <img src="images/login/girl.svg">
+              <img src="images/login/girl.svg" alt="girl-icon">
               <h2 class="title">Sign in</h2>
               <div class="login__field">
                   <i class="login__icon fas fa-user"></i>
                   <input type="text" class="login__input" placeholder="User name / Email" id="UserName">  
                   <br>
+                  <!-- show error message -->
                   <small></small>  
               </div>
               <div class="login__field">
                   <i class="login__icon fas fa-lock"></i>
                   <input type="password" class="login__input" placeholder="Password" id="password">
                   <br>
+                <!-- show error message using id -->
                   <small id="error"></small>
+             </div>
             <a href="#">Forgot Password?</a>
-            <button class="button login__submit" id="btnCount">
+            <button class="button login__submit" id="login">
               <span class="button__text">Log In Now</span>
               <i class="button__icon fas fa-chevron-right"></i>
-          </button>		
-          </form>
-    
-         <div class="social-container">
+            </button>		
+            <!-- social plugin -->
+            <div class="social-container">
                   <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
                   <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
                   <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-              </div>
+            </div>
           
-          <div class="signup-link">
-          Not a member? <a href="./signUp.html">Signup now</a></div>
-          </div>  
-      </div>
-        </div>
+            <div class="signup-link">
+                Not a member? <a href="./signUp.html">Signup now</a>
+             </div>
+           </form>
       </div>
       <script src="js/login.js"></script>
+   </div>
 </body>
-
 </html>

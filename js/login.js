@@ -1,6 +1,11 @@
-// alert("janki");
-let btn = document.getElementById('btnCount');
-btn.addEventListener('click', () => {
+window.onload = function () {
+	document.getElementById('login').onclick = validate;
+  };
+
+function validate()
+{
+	let btn = document.getElementById('btnCount');
+
 	let fname2 = document.querySelector('#UserName');
 	 let password = document.querySelector('#password');
 	
@@ -43,6 +48,6 @@ btn.addEventListener('click', () => {
 
 alert(message);
 	}
-});
+}
 
 
