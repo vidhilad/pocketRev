@@ -30,9 +30,12 @@ It’s rare these days for a consumer to buy a product without doing any prior r
 ## Vidhi Lad
 
 -Brands: In this page the information on different types of brands is viewed using HTML and CSS grid and flex.
+
 -Contact Us: The page is developed to connect with the audience and is constructed using HTML, CSS and JavaScript.
+
 -Laptop: The popular laptops are displayed on this page along with the price and extra detail at the bottom.
--Laptop Details: The in detailed data on laptop is given with an image, special features in a tabular form and a video at the end for the end-user to know more about the particular laptop.
+
+-Laptop Details: The in detailed data on laptop is given with an image, special features in a tabular form and a video at the end for the end-user to know more about                     the particular laptop.
 
 ## Ashish Kumar
 - Gen Review : In this Page reviews of general products are shown such as Laptops and Mouse - HTML and CSS
