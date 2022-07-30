@@ -417,18 +417,23 @@ tr:nth-child(even) {
     display: flex;
 }
 
-.sign_up .sign_up_email input {
+.sign_up .sign_up_email input[type="email"] {
     width: 300px;
     height: 40px;
     margin: 0;
 }
 
-.sign_up .sign_up_email button {
+.sign_up .sign_up_email input[type="button"] {
     margin: 0;
 }
 
 .sign_up_email input {
     font-size: 1.2em;
+}
+
+.error {
+    font-size: small;
+    color: red
 }
 
 .sign_up .policy {
@@ -516,7 +521,7 @@ tr:nth-child(even) {
     font-size: 1.5em;
 }
 
-.comment button {
+.comment input {
     align-self: flex-end;
     margin: 16px;
     margin-right: 0px;
@@ -701,9 +706,10 @@ tr:nth-child(even) {
         position: fixed;
         top: 20vh;
         left: 0;
-        /* grid-row: 1 / span 2;
-        grid-column: 1;
-        align-self: start; */
+        opacity: 0;
+        border: 2px solid var(--color-primary);
+        border-radius: 16px;
+        margin-left: 2px;
     }
 
     .review {
@@ -714,5 +720,23 @@ tr:nth-child(even) {
     .article_footer {
         display: grid;
         grid-template-columns: 1fr minmax(40%, 50%) 2fr;
+    }
+}
+
+@keyframes fade_in {
+    form {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade_out {
+    form {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
     }
 }

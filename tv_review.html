@@ -58,6 +58,10 @@
     </header>
 
     <main>
+        <canvas id="myCanvas">
+            This browser does not support canvas
+        </canvas>
+
         <section class="tv_intro_section">
             <div class="title">
                 <h1>Hisense 55U8G Review</h1>
@@ -163,12 +167,6 @@
                 </tbody>
             </table>
 
-        </div>
-
-        <div class="canvas_container">
-            <canvas id="myCanvas">
-                This browser does not support canvas
-            </canvas>
         </div>
 
         <div class="review">
@@ -294,28 +292,29 @@
             <section class="sign_up">
                 <h3>Like What You're Reading?</h3>
                 <p>Sign up for Lab Report to get the latest reviews and top product advice delivered right to your inbox.</p>
-                <div class="sign_up_email">
-                    <input type="text" placeholder="Enter your email">
-                    <button class="btn-primary small sharp_corner">Sign up</button>
-                </div>
+                <form class="sign_up_email">
+                    <input type="email" placeholder="Enter your email">
+                    <input type="button" class="btn-primary small sharp_corner" value="Sign up">
+                </form>
+                <span class="error"></span>
                 
                 <p class="policy">This newsletter may contain advertising, deals, or affiliate links. Subscribing to a newsletter indicates your consent to our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>. You may unsubscribe from the newsletters at any time.</p>
             </section>
     
             <div class="reaction">
-                <p>39 People Reacted</p>
+                <p><span id="reacted">39</span> People Reacted</p>
                 <h4>Was this article helpful?</h4>
                 <div class="thumbs_containter">
                     <div class="thumbs">
                         <i class="fa-regular fa-thumbs-up"></i>
                         <p>YES</p>
-                        <p class="votes">39</p>
+                        <p id="votes_up">39</p>
                     </div>
                     
                     <div class="thumbs">
                         <i class="fa-regular fa-thumbs-down"></i>
                         <p>NO</p>
-                        <p class="votes">0</p>
+                        <p id="votes_down">0</p>
                     </div>
                 </div>
                 
@@ -324,16 +323,20 @@
             <section class="comment">
                 <h3>Comment or Add your own review</h3>
                 <div class="stars">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star" tag="1"></i>
+                    <i class="fa-regular fa-star" tag="2"></i>
+                    <i class="fa-regular fa-star" tag="3"></i>
+                    <i class="fa-regular fa-star" tag="4"></i>
+                    <i class="fa-regular fa-star" tag="5"></i>
                     <span>0</span>
                 </div>
-                <p>Login | Sign Up</p>
-                <textarea id="comment" name="comment"></textarea>
-                <button class="btn-primary small">Post</button>
+                <p><a href="./login.html">Login</a> | <a href="./signUp.html">Sign Up</a></p>
+                <textarea id="comment_text" name="comment"></textarea>
+                <span></span>
+                <input type="button" id="btnPost" class="btn-primary small" value="Post">
+
+                <div id="user_comments">
+                </div>
             </section>
     
             <section class="about_author">
