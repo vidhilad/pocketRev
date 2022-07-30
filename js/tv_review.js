@@ -1,33 +1,42 @@
-const listOfComments = []
+'use strict'
+// Variables related to canvas drawing and animations
 
-document.addEventListener('DOMContentLoaded', () => {
-    registerObservers()
-
-    registerListeners()
-
-    init()
-})
-
-let startX = 50;
-let startY = 0;
+let startX = 50; //left text padding
 let frames = 60;
 let distance = 200;
-let increment = 0
 let currentFrame = 0
-let x = 50
-let y = 50
-let endX = 150
 let context = null
 let textHeight = 24
-let canvasHeight = -1
 
 const titles = ['Introduction', 'A Slim, Stylish Design', 'Similar Products', 'Android TV and Google Assistant', 'Hisense U8G Picture Performance', 'The Viewing Experience', 'Best In Class']
 let textYOffset = -1
-let guideLineX = startX - (startX / 2)
+let guideLineX = startX - (startX / 2) // left grey line padding
 let current = 1
 let to = 2
 
-let animatingOffset = -1
+// ---------------------------------------------------------------
+
+const listOfComments = []
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    /*
+     * Registers intersection observer to trigger canvas animation and visibility
+     */
+    registerObservers()
+
+    /*
+     * Click listeners
+     */
+    registerListeners()
+
+    /*
+     * Initializes canvas to initial state
+     * Animation from one heading to another starts when intersection observer detects an intersection
+
+     */
+    init()
+})
 
 function registerListeners() {
     const btnSignUp = document.querySelector('.sign_up_email input[type="button"]')
@@ -48,7 +57,6 @@ function registerListeners() {
             span.style.color = 'green'
             span.innerHTML = 'Thank you! You have been registered.'
         }
-        console.log('Email = ' + emailValue)
     })
 
     const thumpsUp = document.querySelector('.fa-thumbs-up')
@@ -115,15 +123,11 @@ function registerListeners() {
             textArea.value = ''
             updateCommentUI()
         }
-
-        
     })
 }
 
 function updateCommentUI() {
     const userComments = document.querySelector('#user_comments')
-
-    console.log(listOfComments)
 
     while (userComments.firstChild) {
         userComments.removeChild(userComments.lastChild)
@@ -200,10 +204,11 @@ function registerObservers() {
 
 
     const authorObserver = new IntersectionObserver((entries) => {
-        console.log('In auther observer ' + window.pageYOffset + ' viewport height = ' + window.innerHeight)
-        //console.log(entries)
         entries.forEach((entry) => {
-            if (entry.time > 500 || window.pageYOffset > window.innerHeight) {
+            console.log("entry.time = " + entry.time + " innnerPageYoffset = " + window.pageYOffset + " innerheight = " + innerHeight)
+            console.log('is intersecting = ' + entry.isIntersecting)
+
+            if (entry.time > 500 && window.pageYOffset > (window.innerHeight / 2)) {
                 if (entry.isIntersecting) {
                     canvas.style.animationName = 'fade_out'
                     canvas.style.animationDuration = '200ms'
@@ -234,34 +239,32 @@ function init() {
     const canvas = document.getElementById('myCanvas')
     context = canvas.getContext('2d')
 
-    //canvas.style.backgroundColor = 'blue'
-
+    //Fixing canvas blurry issue (dpi)
     let scale = window.devicePixelRatio
-
     const width = 300;
     const height = 550;
-
+    //setting width and height in style
     canvas.style.width = width + 'px'
     canvas.style.height = height + 'px'
-
-    console.log('Scale = ' + scale)
+    //setting scaled with and height
     canvas.width = width * scale
     canvas.height = height * scale
-
+    //scaling the canvas
     context.scale(scale, scale)
 
-    canvasHeight = canvas.height * scale
     context.fillStyle = 'blue'
+    //Title is placed with equal spacing based on the canvas height.
+    //textYOffset is the distance at with text should be placed so it looks equal spaced
     textYOffset = canvas.height / (titles.length + 1) / scale
-    
-    console.log(`Y offser ${textYOffset}`)
 
     context.font = `${textHeight}px serif`
+    //Draw the titles
     for (let index = 0; index < titles.length; index++) {
-        let y = startY + ((index + 1) * textYOffset)
+        let y = ((index + 1) * textYOffset)
         context.textBaseline = 'middle'
         let fitTitle = titles[index]
 
+        //If text is too long, decrease size and append ...
         if (titles[index].length > 20) {
             fitTitle = titles[index].substr(0, 19)
             fitTitle += '...'
@@ -269,12 +272,14 @@ function init() {
         context.fillText(fitTitle, startX, y)
     }
 
+    //Draw the light gray line
     context.beginPath()
     context.moveTo(guideLineX, textYOffset - (textYOffset / 2) )
     context.lineTo(guideLineX, (textYOffset * titles.length) + (textYOffset / 2))
     context.strokeStyle = 'lightgray'
     context.stroke()
 
+    //Draw the moving green line
     context.beginPath()
     context.moveTo(guideLineX, textYOffset * current - (textHeight))
     context.lineTo(guideLineX, textYOffset * current + (textHeight))
@@ -283,28 +288,35 @@ function init() {
     context.stroke()
 }
 
+//Called when interaction observer fires
 function animate(to1) {
     to = to1 + 1
     requestAnimationFrame(loop)
 }
 
+//Main animation loop
 function loop() {
     clearPath()
 
     update(2)
     draw()
-
+    
     if (currentFrame < frames) {
+        //Continue animation if frame is not reached
         requestAnimationFrame(loop)
     } else {
+        //Reset and update current frame else
         currentFrame = 0
         current = to;
     }
 }
 
+// Clears the light gray area
 function clearPath() {
+    //Clears the whole area
     context.clearRect(guideLineX - 2, textYOffset - (textYOffset), guideLineX + 2, (textYOffset * titles.length) + (textYOffset))
 
+    //Draw the gray path only
     context.beginPath()
     context.moveTo(guideLineX, textYOffset - (textYOffset / 2) )
     context.lineTo(guideLineX, (textYOffset * titles.length) + (textYOffset / 2))
@@ -317,14 +329,11 @@ function update(speed) {
     currentFrame += speed
 }
 
-function easeInOutQuad (t, b, c, d) {
-    if ((t /= d / 2) < 1) return c / 2 * t * t + b;
-    return -c / 2 * ((--t) * (t - 2) - 1) + b;
-}
-
 function draw() {
+    //Gets the next position for the green line
     let animatingOffset = textYOffset * current + getY()
 
+    //Draws green line at that position
     context.beginPath()
     context.moveTo(guideLineX, animatingOffset - (textHeight ))
     context.lineTo(guideLineX, animatingOffset + (textHeight ))
@@ -334,8 +343,19 @@ function draw() {
 }
 
 function getY() {
+    // The actual distance the green line has to travel
     const distance = textYOffset * to - textYOffset * current
     //return distance / frames * currentFrame
+    // We have 100 frames, we increase currentFrame on each frame. The basically (currentFrame/frames) gives the percentage and multiplied by distance gives the actual current distance.
+    // param1 - current progress
+    // param2 - initial prograss
+    // param3 - distance to animate
+    // param4 - number of frames
     return easeInOutQuad(currentFrame, 0, distance, frames)
+}
 
+//Calculates the aniamtion ease.
+function easeInOutQuad (t, b, c, d) {
+    if ((t /= d / 2) < 1) return c / 2 * t * t + b;
+    return -c / 2 * ((--t) * (t - 2) - 1) + b;
 }
