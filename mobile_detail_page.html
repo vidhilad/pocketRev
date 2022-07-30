@@ -60,35 +60,22 @@
 			<div class = "card">
 				<!-- card left -->
 				<div class = "product-imgs">
-					<div class = "img-display">
-						<div class = "img-showcase">
-							<img src = "./images/Mobile_page/Apple-iPhone13mini.png" alt = "shoe image">
-							<img src = "./images/Mobile_page/iphone_13_2.jpg" alt = "shoe image">
-							<img src = "./images/Mobile_page/iphone_13_4.jpg" alt = "shoe image">
-							<img src = "./images/Mobile_page/iphone_13_3.png" alt = "shoe image">
-						</div>
+					<div class="main-img">
+						<img src="./images/Mobile_page/Apple-iPhone13mini.png" class="pro-img" alt="product" />
 					</div>
-					<div class = "img-select">
-						<div class = "img-item">
-							<a href = "#" data-id = "1">
-								<img  src = "./images/Mobile_page/Apple-iPhone13mini.png" alt = "shoe image">
-							</a>
+					<div class="thumb-img">
+						<div class="box active" onclick="changeImage(this)">
+						   <img class="imgStyle" src="./images/Mobile_page/Apple-iPhone13mini.png" alt="thumb" />
 						</div>
-						<div class = "img-item">
-							<a href = "#" data-id = "2">
-								<img  src = "./images/Mobile_page/iphone_13_2.jpg" alt = "shoe image">
-							</a>
+						<div class="box" onclick="changeImage(this)">
+						   <img  class="imgStyle" src="./images/Mobile_page/iphone_13_4.jpg" alt="thumb" />
 						</div>
-						<div class = "img-item">
-							<a href = "#" data-id = "3">
-								<img src = "./images/Mobile_page/iphone_13_4.jpg" alt = "shoe image">
-							</a>
+						<div class="box" onclick="changeImage(this)">
+						   <img  class="imgStyle" src="./images/Mobile_page/iphone_13_3.png" alt="thumb" />
 						</div>
-						<div class = "img-item">
-							<a href = "#" data-id = "4">
-								<img src = "./images/Mobile_Page/iphone_13_3.png" alt = "shoe image">
-							</a>
-						</div>
+						<div class="box" onclick="changeImage(this)">
+							<img  class="imgStyle" src="./images/Mobile_page/iphone_13_2.jpg" alt="thumb" />
+						 </div>
 					</div>
 				</div>
 				<!-- card right -->
@@ -102,7 +89,6 @@
 						<i class = "far fa-star"></i>
 						<span>4.0(22)</span>
 					</div>
-
 					<div class = "product-price">
 						<p class = "last-price">Old Price: <span>$750.00</span></p>
 						<p class = "new-price">New Price: <span>$600.00 (5%)</span></p>
@@ -218,5 +204,6 @@
 			</div>
 		</footer>
 		<script src="./js/header.js"></script>
+		<script src="./js/phoneDetail.js"></script>
 	</body>
 </html>

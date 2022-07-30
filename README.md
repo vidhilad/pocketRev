@@ -10,10 +10,9 @@ It’s rare these days for a consumer to buy a product without doing any prior r
 ## Hardi Majmundar
 
 - Signup - Completed responsive page with form validation and after submitting form redirecting to login page.
-
 - Bestbuy
 - Mobile and tablet Page
-- detail Page of the Mobile
+- detail Page of the Mobile- I have completed image slider using javascript .
 
 ## Santosh Dhakal
 
