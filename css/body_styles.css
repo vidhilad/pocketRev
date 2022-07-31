@@ -109,6 +109,9 @@ img{
 .product:hover .product-img img{
 	transform: scale(1.1);
 }
+li {
+	list-style-type: none;
+}
 /* Media Queries */
 @media screen and (min-width: 992px){
 	.product-items{
