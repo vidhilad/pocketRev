@@ -13,6 +13,7 @@
     <script src="https://kit.fontawesome.com/f6de64d3fc.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
     <header >
         <div class="logo_wrapper">
             <a href="#" id="logo">
@@ -57,11 +58,16 @@
     </header>
 
     <main>
+        <!-- Canvas to show the animated table of contents -->
+        <canvas id="myCanvas">
+            This browser does not support canvas
+        </canvas>
+
+        <h1 class="title">Hisense 55U8G Review</h1>
+        <p>Flagship performance for a midrange price</p>
+
+        <!-- Section for introduction image, author info and side summary -->
         <section class="tv_intro_section">
-            <div class="title">
-                <h1>Hisense 55U8G Review</h1>
-                <p>Flagship performance for a midrange price</p>
-            </div>
 
             <div class="article_info">
                 
@@ -89,7 +95,7 @@
                 <i class="fa-solid fa-star-half-stroke"></i>
                 <span class="review_star">4.5 Outstanding</span>
 
-                <h3>The bottom line</h3>
+                <h2>The bottom line</h2>
                 <p>The Hisense U8G series is a bit more expensive than its predecessor, but it delivers more features and better picture quality than you'll get from any other TV in this price range.</p>
 
                 <p>MSRP $949.99</p>
@@ -98,7 +104,7 @@
                         <p><span class="price">$699.96</span> <span class="store">at Amazon</span></p>
                         <p><span class="original_price">$999</span> <span class="save">Save $300.03</span></p>
                     </div>
-                    <button class="check_price btn-primary small"><a href="https://www.amazon.ca" target="blank">See It</a></button>
+                    <a href="https://www.amazon.ca" class="check_price btn-primary small" target="blank">See It</a>
                 </div>
 
                 <div class="prices">
@@ -106,12 +112,13 @@
                         <p><span class="price">$712.96</span> <span class="store">at Bestbuy</span></p>
                         <p><span class="original_price">$749</span> <span class="save">Save $37.00</span></p>
                     </div>
-                    <button class="check_price btn-primary small"><a href="https://www.bestbuy.ca" target="blank">See It</a></button>
+                    <a href="https://www.bestbuy.ca" class="check_price btn-primary small" target="blank">See It</a>
                 </div>
 
             </article>
         </section>
 
+        <!-- Section showing pros and cons, quick table summary -->
         <div class="quick_glance">
             <div class="pros_cons">
                 <section class="pros">
@@ -164,12 +171,15 @@
 
         </div>
 
+        <!-- Section for text review content -->
         <div class="review">
-            <div class="introduction">
+
+            <div id="introduction">
+                <h2>Introduction</h2>
                 <p>The Hisense H9G was one of our favorite TVs of 2020, combining an excellent picture with a stylish design and hands-free Google Assistant for a very reasonable price. The company is following up this line with the U8G series, which is even brighter than the H9G and adds a number of gamer-friendly features to the mix. It’s also a fair bit more expensive, crossing the $1,000 mark with the 65-inch 65U8G model we tested retailing for $1,299.99. That’s still a very reasonable price for the features and performance you get, making the Hisense H9G our Editors’ Choice winner for midrange TVs.
                 </p>
             </div>
-            <section class="design">
+            <section id="design">
                 <h2>A Slim, Stylish Design</h2>
                 <p>
                     The U8G has a gorgeous design, with an edge-to-edge glass panel framed by a silver band that rests just behind it, keeping the screen itself front and center. The bottom edge holds a narrow silver bezel with a small sensor array protruding down from the middle. The entire TV sits on two triangular gray metal legs that attach to the bottom, just a few inches past a third of the screen’s width from either direction, sitting significantly narrower than the TV itself and giving you more flexibility in where you can place it. You can also mount it on the wall.
@@ -178,7 +188,8 @@
                     <p>With the exception of the power connector on the right side, all of the U8G’s ports sit on the left side of the back of the panel. Four HDMI ports, two USB ports (one 0.5A, one 1A), a 3.5mm composite video input, a 3.5mm headphone jack, and an antenna/cable connector face left. An Ethernet port, an optical audio output, and 3.5mm serial and service ports face directly back.</p>
             </section>
 
-            <section class="similar_products">
+            <!-- Unrelated to text review, showing user similar product reviews -->
+            <section id="similar_products">
                 <h2>Similar Products</h2>
                 <div class="articles">
                     <div class="product">
@@ -193,7 +204,7 @@
                         <p class="similar_title">TCL 55-Inch 6-Series 4K Roku TV (55R635)</p>
                         <p>$648.00</p>
                         <div class="similar_buy_btn">
-                            <button class="btn-primary small"><a href="https://amazon.com" target="blank">See It</a></button>
+                            <a href="https://amazon.com" class="btn-primary small" target="blank">See It</a>
                             <p>at Amazon</p>
                         </div>
                         <a class="similar_link" href="/tv_review.html">Read Our TCL 55-Inch 6-Series 4K Roku TV (55R635) Review</a>
@@ -211,7 +222,7 @@
                         <p class="similar_title">Hisense 65H8G</p>
                         <p>$789.50</p>
                         <div class="similar_buy_btn">
-                            <button class="btn-primary small"><a href="https://amazon.com" target="blank">See It</a></button>
+                            <a href="https://amazon.com" class="btn-primary small" target="blank">See It</a>
                             <p>at Amazon</p>
                         </div>
                         <a class="similar_link" href="#">Read Our Hisense 65H8G Review</a>
@@ -219,7 +230,7 @@
                 </div>
             </section>
 
-            <section class="assistant">
+            <section id="assistant">
                 <h2>Android TV and Google Assistant</h2>
                 <p>
                     Most major streaming services are available, including Amazon Prime Video, Disney+, HBO Max, Hulu, Netflix, Twitch, and YouTube. However, while the Apple TV app is available on Google TV, it doesn’t currently work on Android TV, so you can’t run it on the U8G. Google Cast is integrated with Android TV, so you can stream from any Android phone or tablet, or a Chrome tab.
@@ -229,7 +240,7 @@
                 </p>
             </section>
 
-            <section class="performance">
+            <section id="performance">
                 <h2>Hisense U8G Picture Performance</h2>
             
                 <p>The Hisense U8G is a 4K TV that supports high dynamic range (HDR) content in Dolby Vision, HDR10, HDR10+, and hybrid log gamma (HLG). It has a 120Hz refresh rate and supports automatic low latency mode (ALLM), variable refresh rate (VRR), and AMD FreeSync.</p>
@@ -248,7 +259,7 @@
                 </p>
             </section>
 
-            <section class="experience">
+            <section id="experience">
                 <h2>The Viewing Experience</h2>
                 <p>BBC’s Planet Earth II looks excellent on the U8G. Bright subjects stand out as very bright, and shadows appear dark while still showing detail. Colors are vibrant and saturated, looking vivid but natural. The blues of water and greens of leaves all look full and colorful. Fine textures like fur and bark are easy to see in all lighting conditions.
                 
@@ -263,7 +274,7 @@
                 <img src="./images/tv_review/side_profile.jpg" alt="Side Profile of TV">
             </section>
 
-            <section class="conclusion">
+            <section id="conclusion">
                 <h2>Best In Class</h2>
                 <p>
                     The Hisense U8G is a fantastic TV for a reasonable price. It’s more expensive than the previous H9G line, but even crossing the $1,000 mark for the 65-inch model we reviewed, you’ll have a hard time finding a similarly priced TV that looks nearly as good. And even if you splurge on an OLED model like the Sony Master Series A90J, it won’t be nearly as bright as this one, earning the U8G our Editors' Choice award.
@@ -280,33 +291,35 @@
             </section>
         </div>
 
+        <!-- Section for sign up input, reaction and comment -->
         <div class="article_footer">
 
             <section class="sign_up">
                 <h3>Like What You're Reading?</h3>
                 <p>Sign up for Lab Report to get the latest reviews and top product advice delivered right to your inbox.</p>
-                <div class="sign_up_email">
-                    <input type="text" placeholder="Enter your email">
-                    <button class="btn-primary small sharp_corner">Sign up</button>
-                </div>
+                <form class="sign_up_email">
+                    <input type="email" placeholder="Enter your email">
+                    <input type="button" class="btn-primary small sharp_corner" value="Sign up">
+                </form>
+                <span class="error"></span>
                 
                 <p class="policy">This newsletter may contain advertising, deals, or affiliate links. Subscribing to a newsletter indicates your consent to our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>. You may unsubscribe from the newsletters at any time.</p>
             </section>
     
             <div class="reaction">
-                <p>39 People Reacted</p>
+                <p><span id="reacted">39</span> People Reacted</p>
                 <h4>Was this article helpful?</h4>
                 <div class="thumbs_containter">
                     <div class="thumbs">
                         <i class="fa-regular fa-thumbs-up"></i>
                         <p>YES</p>
-                        <p class="votes">39</p>
+                        <p id="votes_up">39</p>
                     </div>
                     
                     <div class="thumbs">
                         <i class="fa-regular fa-thumbs-down"></i>
                         <p>NO</p>
-                        <p class="votes">0</p>
+                        <p id="votes_down">0</p>
                     </div>
                 </div>
                 
@@ -315,16 +328,20 @@
             <section class="comment">
                 <h3>Comment or Add your own review</h3>
                 <div class="stars">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star" id="1"></i>
+                    <i class="fa-regular fa-star" id="2"></i>
+                    <i class="fa-regular fa-star" id="3"></i>
+                    <i class="fa-regular fa-star" id="4"></i>
+                    <i class="fa-regular fa-star" id="5"></i>
                     <span>0</span>
                 </div>
-                <p>Login | Sign Up</p>
-                <textarea id="comment" name="comment"></textarea>
-                <button class="btn-primary small">Post</button>
+                <p><a href="./login.html">Login</a> | <a href="./signUp.html">Sign Up</a></p>
+                <textarea id="comment_text" name="comment"></textarea>
+                <span></span>
+                <input type="button" id="btnPost" class="btn-primary small" value="Post">
+
+                <div id="user_comments">
+                </div>
             </section>
     
             <section class="about_author">
@@ -382,6 +399,7 @@
     </footer>
 
       <script src="./js/header.js"></script>
+      <script src="./js/tv_review.js"></script>
 
 </body>
 

@@ -15,29 +15,37 @@ a {
     color: white;
 }
 
+#myCanvas {
+    display: none;
+}
+
+a.btn-primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /********** First row of website including author info, image, general info **********/
 .tv_intro_section {
     display: flex;
     flex-direction: column;
 }
 
-.tv_intro_section .title {
+h1.title {
     align-items: center;
     justify-items: center;
     text-align: center;
+    margin-bottom: 0;
 }
 
-.tv_intro_section .title h1 {
+h1.title {
     font-size: 3em;
     margin-bottom: 0px;
 }
 
-.tv_intro_section .title p {
+h1.title+p {
     margin-top: 0px;
-}
-
-.tv_intro_section .title p:last-child {
-    margin-top: 0px;
+    text-align: center;
 }
 
 .review_star {
@@ -102,6 +110,7 @@ a {
     text-decoration: underline;
     margin: 0;
 }
+
 
 /* Grid is used for bigger screen */
 .tv_intro_section .published_date {
@@ -261,35 +270,35 @@ tr:nth-child(even) {
     width: 100%;
 }
 
-.review .introduction {
+.review #introduction {
     grid-area: introduction;
 }
 
-.design {
+#design {
     grid-area: design;
     display: flex;
     flex-direction: column;
 }
 
-.design img {
+#design img {
     width: 100%;
 }
 
 /********** Similar Tv suggestion **********/
 
-.similar_products {
+#similar_products {
     grid-area: similar_products;
 }
 
-.similar_products .articles {
+#similar_products .articles {
     display: flex;
 }
 
-.similar_products h2 {
+#similar_products h2 {
     border-bottom: 3px solid rgb(73, 156, 230);
 }
 
-.similar_products .articles .product {
+#similar_products .articles .product {
     width: 50%;
     border: 2px solid lightgray;
     margin: 0 16px;
@@ -297,71 +306,71 @@ tr:nth-child(even) {
     border-radius: 16px;
 }
 
-.similar_products .articles img {
+#similar_products .articles img {
     width: 100%;
 }
 
-.similar_products .articles .product:hover {
+#similar_products .articles .product:hover {
     border: 2px solid rgb(73, 156, 230);
 }
 
-.similar_products .articles i {
+#similar_products .articles i {
     color: rgb(73, 156, 230);
 }
 
-.similar_products .similar_review_star {
+#similar_products .similar_review_star {
     color: rgb(73, 156, 230);
     font-weight: bold;
 }
 
-.similar_products .similar_title {
+#similar_products .similar_title {
     font-weight: bold;
     height: 70px;
 }
 
-.similar_products .similar_buy_btn {
+#similar_products .similar_buy_btn {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.similar_products .similar_buy_btn p {
+#similar_products .similar_buy_btn p {
     margin-left: 8px;
     font-size: 0.8em;
     font-weight: 300;
 }
 
-.similar_products .similar_link {
+#similar_products .similar_link {
     color: black;
     font-size: 1em;
     font-weight: 500;
 }
 
-.similar_products .similar_link:hover {
+#similar_products .similar_link:hover {
     color: rgb(73, 156, 230);
 }
 
-.assistant {
+#assistant {
     grid-area: assistant;
 }
 
-.performance {
+#performance {
     grid-area : performance;
 }
 
-.performance img {
+#performance img {
     width: 100%;
 }
 
-.experience {
+#experience {
     grid-area: experience;
 }
 
-.experience img {
+#experience img {
     width: 100%;
 }
 
-.conclusion {
+#conclusion {
     grid-area: conclusion;
 }
 
@@ -417,18 +426,23 @@ tr:nth-child(even) {
     display: flex;
 }
 
-.sign_up .sign_up_email input {
+.sign_up .sign_up_email input[type="email"] {
     width: 300px;
     height: 40px;
     margin: 0;
 }
 
-.sign_up .sign_up_email button {
+.sign_up .sign_up_email input[type="button"] {
     margin: 0;
 }
 
 .sign_up_email input {
     font-size: 1.2em;
+}
+
+.error {
+    font-size: small;
+    color: red
 }
 
 .sign_up .policy {
@@ -516,7 +530,7 @@ tr:nth-child(even) {
     font-size: 1.5em;
 }
 
-.comment button {
+.comment input {
     align-self: flex-end;
     margin: 16px;
     margin-right: 0px;
@@ -544,17 +558,28 @@ tr:nth-child(even) {
 
 @media only screen and (min-width: 900px) {
 
+    #myCanvas {
+        display: none;
+    }
+
     .tv_intro_section {
         display: grid;
         grid-template-columns: minmax(40%, 60%) 1fr;
         grid-template-areas: 
             "title title"
+            "subtitle subtitle"
             "article_info article_info"
             "main_image review_intro";
     }
 
     .tv_intro_section .title {
         grid-area: title;
+        margin-bottom: 0;
+    }
+
+    .tv_intro_section .title+p {
+        grid-area:  subtitle;
+        text-align: center;
     }
     
     .tv_intro_section .article_info {
@@ -653,6 +678,7 @@ tr:nth-child(even) {
         grid-template-columns: 1fr minmax(40%, 50%) 2fr;
         grid-template-areas: 
             "title title title"
+            "subtitle subtitle subtitle"
             "article_info main_image review_intro";
     }
 
@@ -697,6 +723,17 @@ tr:nth-child(even) {
         grid-template-columns: 1fr minmax(40%, 50%) 2fr;
     }
 
+    #myCanvas {
+        display: none;
+        position: fixed;
+        top: 20vh;
+        left: 68vw;
+        opacity: 0;
+        border: 2px solid var(--color-primary);
+        border-radius: 16px;
+        margin-left: 2px;
+    }
+
     .review {
         display: grid;
         grid-template-columns: 1fr minmax(40%, 50%) 2fr;
@@ -705,5 +742,23 @@ tr:nth-child(even) {
     .article_footer {
         display: grid;
         grid-template-columns: 1fr minmax(40%, 50%) 2fr;
+    }
+}
+
+@keyframes fade_in {
+    form {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade_out {
+    form {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
     }
 }
