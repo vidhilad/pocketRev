@@ -19,29 +19,33 @@ a {
     display: none;
 }
 
+a.btn-primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /********** First row of website including author info, image, general info **********/
 .tv_intro_section {
     display: flex;
     flex-direction: column;
 }
 
-.tv_intro_section .title {
+h1.title {
     align-items: center;
     justify-items: center;
     text-align: center;
+    margin-bottom: 0;
 }
 
-.tv_intro_section .title h1 {
+h1.title {
     font-size: 3em;
     margin-bottom: 0px;
 }
 
-.tv_intro_section .title p {
+h1.title+p {
     margin-top: 0px;
-}
-
-.tv_intro_section .title p:last-child {
-    margin-top: 0px;
+    text-align: center;
 }
 
 .review_star {
@@ -106,6 +110,7 @@ a {
     text-decoration: underline;
     margin: 0;
 }
+
 
 /* Grid is used for bigger screen */
 .tv_intro_section .published_date {
@@ -553,17 +558,28 @@ tr:nth-child(even) {
 
 @media only screen and (min-width: 900px) {
 
+    #myCanvas {
+        display: none;
+    }
+
     .tv_intro_section {
         display: grid;
         grid-template-columns: minmax(40%, 60%) 1fr;
         grid-template-areas: 
             "title title"
+            "subtitle subtitle"
             "article_info article_info"
             "main_image review_intro";
     }
 
     .tv_intro_section .title {
         grid-area: title;
+        margin-bottom: 0;
+    }
+
+    .tv_intro_section .title+p {
+        grid-area:  subtitle;
+        text-align: center;
     }
     
     .tv_intro_section .article_info {
@@ -662,6 +678,7 @@ tr:nth-child(even) {
         grid-template-columns: 1fr minmax(40%, 50%) 2fr;
         grid-template-areas: 
             "title title title"
+            "subtitle subtitle subtitle"
             "article_info main_image review_intro";
     }
 
@@ -707,10 +724,10 @@ tr:nth-child(even) {
     }
 
     #myCanvas {
-        display: block;
+        display: none;
         position: fixed;
         top: 20vh;
-        left: 0;
+        left: 68vw;
         opacity: 0;
         border: 2px solid var(--color-primary);
         border-radius: 16px;

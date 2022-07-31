@@ -1,6 +1,6 @@
 'use strict'
-// Variables related to canvas drawing and animations
 
+// Variables related to canvas drawing and animations
 let startX = 50; //left text padding
 let frames = 60;
 let distance = 200;
@@ -36,6 +36,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
      */
     init()
+
+    const mq = window.matchMedia( "(max-width: 1200px)" );
+    mq.addListener((mq) => {
+        if (mq.matches) {
+            document.querySelector('#myCanvas').style.display = 'none'
+        }
+    })
 })
 
 function registerListeners() {
@@ -104,7 +111,7 @@ function registerListeners() {
 
     for (let i = 0; i < stars.children.length - 1; i++) {
         stars.children[i].addEventListener('click', (event) => {
-            const updateTo = parseInt(event.target.getAttribute('tag') ) - 1
+            const updateTo = parseInt(event.target.getAttribute('id') ) - 1
             updateStars(updateTo)
         })
     }
@@ -190,6 +197,14 @@ function registerObservers() {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
                 animate(titles.indexOf(entry.target.innerHTML))
+                if (window.innerWidth >= 1200) {
+                    canvas.style.display = 'block'
+                    canvas.style.animationName = 'fade_in'
+                    canvas.style.animationDuration = '500ms'
+                    canvas.style.animationFillMode = 'forwards'
+                } else {
+                    canvas.style.display = 'none'
+                }
             }
         })
     }, { rootMargin: '-200px'})
@@ -213,12 +228,14 @@ function registerObservers() {
                     canvas.style.animationName = 'fade_out'
                     canvas.style.animationDuration = '200ms'
                     canvas.style.animationFillMode = 'forwards'
-                    
                 } else {
+                    canvas.style.display = 'block'
                     canvas.style.animationName = 'fade_in'
                     canvas.style.animationDuration = '500ms'
                     canvas.style.animationFillMode = 'forwards'
                 }
+            } else {
+                canvas.style.opacity = 0
             }
         })
     })
