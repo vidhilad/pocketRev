@@ -1,12 +1,12 @@
 /*css for the html tag*/
-html{
-    margin:0;
+html {
+    margin: 0;
     padding: 0;
-    background: linear-gradient(to top, black,white);
+    background: linear-gradient(to top, black, white);
 }
 
 /*css for the body of the page*/
-body{
+body {
     background-color: white;
     margin: 60px;
     height: auto;
@@ -14,24 +14,24 @@ body{
 }
 
 /*css for the header of the brands page*/
-.wrapper>h2{
+.wrapper>h2 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 40px;
-    color:black;
+    color: black;
     text-shadow: 2px 2px darkcyan;
-    display:flex;
+    display: flex;
     justify-content: center;
 }
 
 /*css for the header with hover effect*/
-.wrapper h2:hover{
-    color:cornflowerblue;
+.wrapper h2:hover {
+    color: cornflowerblue;
     text-shadow: 1px 4px grey;
 }
 
 /*css for the paragraph of brands page*/
-.brands p{
-    display:grid;
+.brands p {
+    display: grid;
     justify-content: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 40px;
@@ -41,14 +41,14 @@ body{
 }
 
 /* css for the paragraph along with hover effect*/
-.brands p:hover{
-    color:cornflowerblue;
+.brands p:hover {
+    color: cornflowerblue;
     text-shadow: 1px 4px grey;
 }
 
 
 /*css for the images of brands page*/
-#Image1{
+#Image1 {
     padding-left: 90px;
     border: 6px solid rgb(67, 67, 81);
     border-radius: 3px;
@@ -58,38 +58,38 @@ body{
 }
 
 /*css for each image on brands page*/
-#Image1>img{
-    display:grid;
+#Image1>img {
+    display: grid;
     justify-content: center;
     width: 400px;
     height: 350px;
 }
 
 /*css for the hover effect*/
-.hover>img{
-    width:400px;
+.hover>img {
+    width: 400px;
     height: 350px;
     opacity: 1;
     filter: alpha(opacity=100);
 }
 
 /*css with hover as well as overlay effect*/
-.hover>img:hover{ 
+.hover>img:hover {
     opacity: 0.6;
     filter: alpha(opacity=30);
 }
 
 /*css with focus effect on images*/
-.hover>img:focus{
+.hover>img:focus {
     opacity: 0.6;
     filter: alpha(opacity=30);
 }
 
 /*css for the data on brands*/
-.main_content{
-    display:grid;
-    grid-template-columns: repeat(2,60%);
-    grid-auto-columns: minmax(100%,auto);
+.main_content {
+    display: grid;
+    grid-template-columns: repeat(2, 60%);
+    grid-auto-columns: minmax(100%, auto);
     justify-content: center;
     margin-top: 60px;
     margin-left: 180px;
@@ -97,11 +97,11 @@ body{
 }
 
 /*css for each div element fir brands*/
-.main_content>div{
-    display:grid;
+.main_content>div {
+    display: grid;
     border: 2px double burlywood;
     background-color: rgb(61, 57, 57);
-    color:white;
+    color: white;
     border-radius: 20px;
     text-align: center;
     padding: 10px;
@@ -109,13 +109,13 @@ body{
 }
 
 /*css with hover effect on each brands data*/
-.main_content>div:hover{
-    background-color:paleturquoise;
-    color:black;
+.main_content>div:hover {
+    background-color: paleturquoise;
+    color: black;
 }
 
 /*css for the header part of brands data*/
-.info>h2{
+.info>h2 {
     text-decoration: dashed;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-shadow: 2px 1px burlywood;
@@ -123,754 +123,846 @@ body{
 }
 
 /*css for hover effect*/
-.info>h2:hover{
-    color:red;
+.info>h2:hover {
+    color: red;
 }
 
 /*css with focus effect*/
-.info>h2:focus{
-    color:red;
+.info>h2:focus {
+    color: red;
 }
 
 
 /*css for the data on brands*/
-.info>ul{
-    display:flex;
+.info>ul {
+    display: flex;
     flex-wrap: wrap;
 }
-.info li{
+
+.info li {
     text-align: left;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 18px;
 }
-.info li:hover{
-    background-color:yellow;
+
+.info li:hover {
+    background-color: yellow;
     font-size: 22px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.info li:focus{
-    background-color:yellow;
+
+.info li:focus {
+    background-color: yellow;
     font-size: 22px;
 }
 
 /*css for the grid effect of brands data*/
-.content1{
+.content1 {
     display: grid;
     grid-column-end: span 2;
 }
 
-.content2{
+.content2 {
     display: grid;
     grid-row-end: span 1;
 }
 
-.content3{
+.content3 {
     display: grid;
     grid-column-end: span 1;
 }
-.content4{
+
+.content4 {
     display: grid;
     grid-column-end: span 2;
 }
 
-.content5{
+.content5 {
     display: grid;
     grid-column-end: span 1;
 }
 
-.content6{
+.content6 {
     display: grid;
     grid-column-end: span 1;
 }
 
 /*css for the main gallery of the brands page*/
-.main_gallery{
-    display:grid;
-    grid-template-columns:repeat(5,20%);
-    grid-auto-columns: minmax(100%,auto);
+.main_gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-auto-columns: minmax(100%, auto);
     justify-content: center;
     padding: 20px;
 }
-.main_gallery>div{
+
+.main_gallery>div {
     /*border: 1px solid burlywood;
-    border-radius: 5px;*/  
+    border-radius: 5px;*/
     text-align: center;
     padding: 40px;
     margin: 1px;
 }
 
 /*css for creating the grid for gallery*/
-.item1{
-    display:grid;
+.item1 {
+    display: grid;
     grid-column-end: span 3;
     background-color: black;
 }
 
-.item1 img{
+.item1 img {
     width: 100%;
     height: 100%;
-    display:flex;
-    flex-wrap: wrap;   
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
 }
 
-.item2{
-    display:grid;
+.item2 {
+    display: grid;
     grid-column-end: span 2;
     background-color: grey;
 }
-.item2 img{
+
+.item2 img {
     width: 100%;
     height: 100%;
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
+    cursor: pointer;
+
 }
-.item3{
-    display:grid;
+
+.item3 {
+    display: grid;
     grid-column-end: span 5;
     background-color: beige;
 }
-.item3 img{
-    width:100%;
+
+.item3 img {
+    width: 100%;
     height: 100%;
-    display:flex;
-    flex-wrap:wrap;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+
 }
-.item4{
+
+.item4 {
     display: grid;
     grid-column-end: span 2;
     background-color: black;
 }
-.item4 img{
-    width:100%;
-    height:100%;
-    display:flex;
-    flex-wrap:wrap;
+
+.item4 img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+
 }
-.item5{
+
+.item5 {
     display: grid;
     grid-column-end: span 1;
     background-color: grey;
 }
-.item5 img{
-    width:100%;
-    height: 100%;
-    display:flex;
-    flex-wrap:wrap;
-}
-.item6{
-    display:grid;
-    grid-column-end: span 2;
-    background-color:black;
-}
-.item6 img{
+
+.item5 img {
     width: 100%;
-    height:100%;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
+    cursor: pointer;
+
+}
+
+.item6 {
+    display: grid;
+    grid-column-end: span 2;
+    background-color: black;
+}
+
+.item6 img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+
 }
 
 /*css for the header of the gallery*/
-.h2{
+.h2 {
     text-decoration: dashed;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-shadow: 2px 1px burlywood;
     font-size: 40px;
 }
 
-.h2:hover{
-    color:red;
+.h2:hover {
+    color: red;
 }
-.h2:focus{
-    color:red;
+
+.h2:focus {
+    color: red;
+}
+
+/*css for creating the viewing effect for gallery session of the brands*/
+#gifeffect {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 2000px;
+    height: 900px;
+    background: rgb(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    visibility: hidden;
+    opacity: 3;
+    transition: opacity ease 0.4s;
 }
 
 
-@media (orientation:landscape){
+#gifeffect.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+#gifeffect img {
+    width: 100%;
+    height: 100%;
+}
+
+#gifeffect img {
+    width: 70%;
+    height: 80%;
+    padding-left: 20%;
+}
+
+
+@media (orientation:landscape) {
+
     /*css for the html tag*/
-html{
-    margin:0;
-    padding: 0;
-    background: linear-gradient(to top, black,white);
-}
+    html {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to top, black, white);
+    }
 
-/*css for the body of the page*/
-body{
-    background-color: white;
-    margin: 60px;
-    height: auto;
-    box-shadow: 4px 4px 6px grey;
-}
+    /*css for the body of the page*/
+    body {
+        background-color: white;
+        margin: 60px;
+        height: auto;
+        box-shadow: 4px 4px 6px grey;
+    }
 
-/*css for the header of the brands page*/
-.wrapper>h2{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 40px;
-    color:black;
-    text-shadow: 2px 2px darkcyan;
-    display:flex;
-    justify-content: center;
-}
+    /*css for the header of the brands page*/
+    .wrapper>h2 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 40px;
+        color: black;
+        text-shadow: 2px 2px darkcyan;
+        display: flex;
+        justify-content: center;
+    }
 
-/*css for the header with hover effect*/
-.wrapper h2:hover{
-    color:cornflowerblue;
-    text-shadow: 1px 4px grey;
-}
+    /*css for the header with hover effect*/
+    .wrapper h2:hover {
+        color: cornflowerblue;
+        text-shadow: 1px 4px grey;
+    }
 
-/*css for the paragraph of brands page*/
-.brands p{
-    display:flex;
-    justify-content: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 40px;
-    font-weight: bold;
-    text-shadow: 2px 2px darkcyan;
-    color: black;
-}
+    /*css for the paragraph of brands page*/
+    .brands p {
+        display: flex;
+        justify-content: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+        text-shadow: 2px 2px darkcyan;
+        color: black;
+    }
 
-/* css for the paragraph along with hover effect*/
-.brands p:hover{
-    color:cornflowerblue;
-    text-shadow: 1px 4px grey;
-}
-
-
-/*css for the images of brands page*/
-#Image1{
-    display:flex;
-    justify-content: center;
-    padding-left: 90px;
-    border: 6px solid rgb(67, 67, 81);
-    border-radius: 3px;
-    padding-top: 35px;
-    padding-bottom: 35px;
-    background-color: black;
-}
-
-/*css for each image on brands page*/
-#Image1>img{
-    display:flex;
-    justify-content: center;
-    width: 400px;
-    height: 350px;
-}
-
-/*css for the hover effect*/
-.hover>img{
-    width:400px;
-    height: 350px;
-    opacity: 1;
-    filter: alpha(opacity=100);
-}
-
-/*css with hover as well as overlay effect*/
-.hover>img:hover{ 
-    opacity: 0.6;
-    filter: alpha(opacity=30);
-}
-
-/*css with focus effect on images*/
-.hover>img:focus{
-    opacity: 0.6;
-    filter: alpha(opacity=30);
-}
-
-/*css for the data on brands*/
-.main_content{
-    display:grid;
-    grid-template-columns: repeat(2,60%);
-    grid-auto-columns: minmax(100%,auto);
-    justify-content: center;
-    margin-top: 60px;
-    margin-left: 180px;
-    margin-right: 180px;
-}
-
-/*css for each div element fir brands*/
-.main_content>div{
-    display:grid;
-    border: 2px double burlywood;
-    background-color: rgb(61, 57, 57);
-    color:white;
-    border-radius: 20px;
-    text-align: center;
-    padding: 10px;
-    margin: 3px;
-}
-
-/*css with hover effect on each brands data*/
-.main_content>div:hover{
-    background-color:paleturquoise;
-    color:black;
-}
-
-/*css for the header part of brands data*/
-.info>h2{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-decoration: dashed;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-shadow: 2px 1px burlywood;
-    font-size: 40px;
-}
-
-/*css for hover effect*/
-.info>h2:hover{
-    color:red;
-}
-
-/*css with focus effect*/
-.info>h2:focus{
-    color:red;
-}
+    /* css for the paragraph along with hover effect*/
+    .brands p:hover {
+        color: cornflowerblue;
+        text-shadow: 1px 4px grey;
+    }
 
 
-/*css for the data on brands*/
-.info>ul{
-    display:flex;
-    flex-wrap: wrap;
-}
-.info li{
-    display:flex;
-    flex-wrap: wrap;
-    text-align: left;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 18px;
-}
-.info li:hover{
-    display:flex;
-    flex-wrap: wrap;
-    background-color:yellow;
-    font-size: 22px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-}
-.info li:focus{
-    display:flex;
-    flex-wrap: wrap;
-    background-color:yellow;
-    font-size: 22px;
-}
+    /*css for the images of brands page*/
+    #Image1 {
+        display: flex;
+        justify-content: center;
+        padding-left: 90px;
+        border: 6px solid rgb(67, 67, 81);
+        border-radius: 3px;
+        padding-top: 35px;
+        padding-bottom: 35px;
+        background-color: black;
+    }
 
-/*css for the grid effect of brands data*/
-.content1{
-    grid-column-end: span 2;
-}
+    /*css for each image on brands page*/
+    #Image1>img {
+        display: flex;
+        justify-content: center;
+        width: 400px;
+        height: 350px;
+    }
 
-.content2{
-    grid-row-end: span 1;
-}
+    /*css for the hover effect*/
+    .hover>img {
+        width: 400px;
+        height: 350px;
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
 
-.content3{
-    grid-column-end: span 1;
-}
-.content4{
-    grid-column-end: span 2;
-}
+    /*css with hover as well as overlay effect*/
+    .hover>img:hover {
+        opacity: 0.6;
+        filter: alpha(opacity=30);
+    }
 
-.content5{
-    grid-column-end: span 1;
-}
+    /*css with focus effect on images*/
+    .hover>img:focus {
+        opacity: 0.6;
+        filter: alpha(opacity=30);
+    }
 
-.content6{
-    grid-column-end: span 1;
-}
+    /*css for the data on brands*/
+    .main_content {
+        display: grid;
+        grid-template-columns: repeat(2, 60%);
+        grid-auto-columns: minmax(100%, auto);
+        justify-content: center;
+        margin-top: 60px;
+        margin-left: 180px;
+        margin-right: 180px;
+    }
 
-/*css for the main gallery of the brands page*/
-.main_gallery{
-    display:grid;
-    grid-template-columns:repeat(5,20%);
-    grid-auto-columns: minmax(100%,auto);
-    justify-content: center;
-    padding: 20px;
-}
-.main_gallery>div{
-    /*border: 1px solid burlywood;
-    border-radius: 5px;*/  
-    text-align: center;
-    padding: 40px;
-    margin: 1px;
-}
+    /*css for each div element fir brands*/
+    .main_content>div {
+        display: grid;
+        border: 2px double burlywood;
+        background-color: rgb(61, 57, 57);
+        color: white;
+        border-radius: 20px;
+        text-align: center;
+        padding: 10px;
+        margin: 3px;
+    }
 
-/*css for creating the grid for gallery*/
-.item1{
-    display:grid;
-    grid-column-end: span 3;
-    background-color: black;
-}
+    /*css with hover effect on each brands data*/
+    .main_content>div:hover {
+        background-color: paleturquoise;
+        color: black;
+    }
 
-.item1 img{
-    width: 100%;
-    height: 100%;
-    display:flex;
-    flex-wrap: wrap;   
-}
+    /*css for the header part of brands data*/
+    .info>h2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-decoration: dashed;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-shadow: 2px 1px burlywood;
+        font-size: 40px;
+    }
 
-.item2{
-    display:grid;
-    grid-column-end: span 2;
-    background-color: grey;
-}
-.item2 img{
-    width: 100%;
-    height: 100%;
-    display:flex;
-    flex-wrap: wrap;
-}
-.item3{
-    display:grid;
-    grid-column-end: span 5;
-    background-color: beige;
-}
-.item3 img{
-    width:100%;
-    height: 100%;
-    display:flex;
-    flex-wrap:wrap;
-}
-.item4{
-    display: grid;
-    grid-column-end: span 2;
-    background-color: black;
-}
-.item4 img{
-    width:100%;
-    height:100%;
-    display:flex;
-    flex-wrap:wrap;
-}
-.item5{
-    display: grid;
-    grid-column-end: span 1;
-    background-color: grey;
-}
-.item5 img{
-    width:100%;
-    height: 100%;
-    display:flex;
-    flex-wrap:wrap;
-}
-.item6{
-    display:grid;
-    grid-column-end: span 2;
-    background-color:black;
-}
-.item6 img{
-    width: 100%;
-    height:100%;
-    display: flex;
-    flex-wrap: wrap;
-}
+    /*css for hover effect*/
+    .info>h2:hover {
+        color: red;
+    }
 
-/*css for the header of the gallery*/
-.h2{
-    text-decoration: dashed;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-shadow: 2px 1px burlywood;
-    font-size: 40px;
-}
-
-.h2:hover{
-    color:red;
-}
-.h2:focus{
-    color:red;
-}
-
-}
+    /*css with focus effect*/
+    .info>h2:focus {
+        color: red;
+    }
 
 
+    /*css for the data on brands*/
+    .info>ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
-@media (orientation:portrait){
+    .info li {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: left;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 18px;
+    }
+
+    .info li:hover {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: yellow;
+        font-size: 22px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .info li:focus {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: yellow;
+        font-size: 22px;
+    }
+
+    /*css for the grid effect of brands data*/
+    .content1 {
+        grid-column-end: span 2;
+    }
+
+    .content2 {
+        grid-row-end: span 1;
+    }
+
+    .content3 {
+        grid-column-end: span 1;
+    }
+
+    .content4 {
+        grid-column-end: span 2;
+    }
+
+    .content5 {
+        grid-column-end: span 1;
+    }
+
+    .content6 {
+        grid-column-end: span 1;
+    }
+
+    /*css for the main gallery of the brands page*/
+    .main_gallery {
+        display: grid;
+        grid-template-columns: repeat(5, 20%);
+        grid-auto-columns: minmax(100%, auto);
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .main_gallery>div {
+        /*border: 1px solid burlywood;
+    border-radius: 5px;*/
+        text-align: center;
+        padding: 40px;
+        margin: 1px;
+    }
+
+    /*css for creating the grid for gallery*/
+    .item1 {
+        display: grid;
+        grid-column-end: span 3;
+        background-color: black;
+    }
+
+    .item1 img {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .item2 {
+        display: grid;
+        grid-column-end: span 2;
+        background-color: grey;
+    }
+
+    .item2 img {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .item3 {
+        display: grid;
+        grid-column-end: span 5;
+        background-color: beige;
+    }
+
+    .item3 img {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .item4 {
+        display: grid;
+        grid-column-end: span 2;
+        background-color: black;
+    }
+
+    .item4 img {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .item5 {
+        display: grid;
+        grid-column-end: span 1;
+        background-color: grey;
+    }
+
+    .item5 img {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .item6 {
+        display: grid;
+        grid-column-end: span 2;
+        background-color: black;
+    }
+
+    .item6 img {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /*css for the header of the gallery*/
+    .h2 {
+        text-decoration: dashed;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-shadow: 2px 1px burlywood;
+        font-size: 40px;
+    }
+
+    .h2:hover {
+        color: red;
+    }
+
+    .h2:focus {
+        color: red;
+    }
+
+}
+
+
+
+@media (orientation:portrait) {
+
     /*css for the html tag*/
-html{
-    margin:0;
-    padding: 0;
-    background: linear-gradient(to top, black,white);
-}
+    html {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to top, black, white);
+    }
 
-/*css for the body of the page*/
-body{
-    background-color: white;
-    margin: 60px;
-    height: auto;
-    box-shadow: 4px 4px 6px grey;
-}
+    /*css for the body of the page*/
+    body {
+        background-color: white;
+        margin: 60px;
+        height: auto;
+        box-shadow: 4px 4px 6px grey;
+    }
 
-/*css for the header of the brands page*/
-.wrapper>h2{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 40px;
-    color:black;
-    text-shadow: 2px 2px darkcyan;
-    display:flex;
-    justify-content: center;
-}
+    /*css for the header of the brands page*/
+    .wrapper>h2 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 40px;
+        color: black;
+        text-shadow: 2px 2px darkcyan;
+        display: flex;
+        justify-content: center;
+    }
 
-/*css for the header with hover effect*/
-.wrapper h2:hover{
-    color:cornflowerblue;
-    text-shadow: 1px 4px grey;
-}
+    /*css for the header with hover effect*/
+    .wrapper h2:hover {
+        color: cornflowerblue;
+        text-shadow: 1px 4px grey;
+    }
 
-/*css for the paragraph of brands page*/
-.brands p{
-    display:flex;
-    justify-content: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 40px;
-    font-weight: bold;
-    text-shadow: 2px 2px darkcyan;
-    color: black;
-}
+    /*css for the paragraph of brands page*/
+    .brands p {
+        display: flex;
+        justify-content: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+        text-shadow: 2px 2px darkcyan;
+        color: black;
+    }
 
-/* css for the paragraph along with hover effect*/
-.brands p:hover{
-    color:cornflowerblue;
-    text-shadow: 1px 4px grey;
-}
-
-
-/*css for the images of brands page*/
-#Image1{
-    display:flex;
-    justify-content: center;
-    padding-left: 90px;
-    border: 6px solid rgb(67, 67, 81);
-    border-radius: 3px;
-    padding-top: 35px;
-    padding-bottom: 35px;
-    background-color: black;
-}
-
-/*css for each image on brands page*/
-#Image1>img{
-    display:flex;
-    justify-content: center;
-    width: 400px;
-    height: 350px;
-}
-
-/*css for the hover effect*/
-.hover>img{
-    width:400px;
-    height: 350px;
-    opacity: 1;
-    filter: alpha(opacity=100);
-}
-
-/*css with hover as well as overlay effect*/
-.hover>img:hover{ 
-    opacity: 0.6;
-    filter: alpha(opacity=30);
-}
-
-/*css with focus effect on images*/
-.hover>img:focus{
-    opacity: 0.6;
-    filter: alpha(opacity=30);
-}
-
-/*css for the data on brands*/
-.main_content{
-    display:grid;
-    grid-template-columns: repeat(2,60%);
-    grid-auto-columns: minmax(100%,auto);
-    justify-content: center;
-    margin-top: 60px;
-    margin-left: 180px;
-    margin-right: 180px;
-}
-
-/*css for each div element fir brands*/
-.main_content>div{
-    display:grid;
-    border: 2px double burlywood;
-    background-color: rgb(61, 57, 57);
-    color:white;
-    border-radius: 20px;
-    text-align: center;
-    padding: 10px;
-    margin: 3px;
-}
-
-/*css with hover effect on each brands data*/
-.main_content>div:hover{
-    background-color:paleturquoise;
-    color:black;
-}
-
-/*css for the header part of brands data*/
-.info>h2{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-decoration: dashed;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-shadow: 2px 1px burlywood;
-    font-size: 40px;
-}
-
-/*css for hover effect*/
-.info>h2:hover{
-    color:red;
-}
-
-/*css with focus effect*/
-.info>h2:focus{
-    color:red;
-}
+    /* css for the paragraph along with hover effect*/
+    .brands p:hover {
+        color: cornflowerblue;
+        text-shadow: 1px 4px grey;
+    }
 
 
-/*css for the data on brands*/
-.info>ul{
-    display:flex;
-    flex-wrap: wrap;
-}
-.info li{
-    display:flex;
-    flex-wrap: wrap;
-    text-align: left;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 18px;
-}
-.info li:hover{
-    display:flex;
-    flex-wrap: wrap;
-    background-color:yellow;
-    font-size: 22px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-}
-.info li:focus{
-    display:flex;
-    flex-wrap: wrap;
-    background-color:yellow;
-    font-size: 22px;
-}
+    /*css for the images of brands page*/
+    #Image1 {
+        display: flex;
+        justify-content: center;
+        padding-left: 90px;
+        border: 6px solid rgb(67, 67, 81);
+        border-radius: 3px;
+        padding-top: 35px;
+        padding-bottom: 35px;
+        background-color: black;
+    }
 
-/*css for the grid effect of brands data*/
-.content1{
-    grid-column-end: span 2;
-}
+    /*css for each image on brands page*/
+    #Image1>img {
+        display: flex;
+        justify-content: center;
+        width: 400px;
+        height: 350px;
+    }
 
-.content2{
-    grid-row-end: span 1;
-}
+    /*css for the hover effect*/
+    .hover>img {
+        width: 400px;
+        height: 350px;
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
 
-.content3{
-    grid-column-end: span 1;
-}
-.content4{
-    grid-column-end: span 2;
-}
+    /*css with hover as well as overlay effect*/
+    .hover>img:hover {
+        opacity: 0.6;
+        filter: alpha(opacity=30);
+    }
 
-.content5{
-    grid-column-end: span 1;
-}
+    /*css with focus effect on images*/
+    .hover>img:focus {
+        opacity: 0.6;
+        filter: alpha(opacity=30);
+    }
 
-.content6{
-    grid-column-end: span 1;
-}
+    /*css for the data on brands*/
+    .main_content {
+        display: grid;
+        grid-template-columns: repeat(2, 60%);
+        grid-auto-columns: minmax(100%, auto);
+        justify-content: center;
+        margin-top: 60px;
+        margin-left: 180px;
+        margin-right: 180px;
+    }
 
-/*css for the main gallery of the brands page*/
-.main_gallery{
-    display:grid;
-    grid-template-columns:repeat(5,20%);
-    grid-auto-columns: minmax(100%,auto);
-    justify-content: center;
-    padding: 20px;
-}
-.main_gallery>div{
-    /*border: 1px solid burlywood;
-    border-radius: 5px;*/  
-    text-align: center;
-    padding: 40px;
-    margin: 1px;
-}
+    /*css for each div element fir brands*/
+    .main_content>div {
+        display: grid;
+        border: 2px double burlywood;
+        background-color: rgb(61, 57, 57);
+        color: white;
+        border-radius: 20px;
+        text-align: center;
+        padding: 10px;
+        margin: 3px;
+    }
 
-/*css for creating the grid for gallery*/
-.item1{
-    display:grid;
-    grid-column-end: span 3;
-    background-color: black;
-}
+    /*css with hover effect on each brands data*/
+    .main_content>div:hover {
+        background-color: paleturquoise;
+        color: black;
+    }
 
-.item1 img{
-    width: 100%;
-    height: 100%;
-    display:flex;
-    flex-wrap: wrap;   
-}
+    /*css for the header part of brands data*/
+    .info>h2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-decoration: dashed;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-shadow: 2px 1px burlywood;
+        font-size: 40px;
+    }
 
-.item2{
-    display:grid;
-    grid-column-end: span 2;
-    background-color: grey;
-}
-.item2 img{
-    width: 100%;
-    height: 100%;
-    display:flex;
-    flex-wrap: wrap;
-}
-.item3{
-    display:grid;
-    grid-column-end: span 5;
-    background-color: beige;
-}
-.item3 img{
-    width:100%;
-    height: 100%;
-    display:flex;
-    flex-wrap:wrap;
-}
-.item4{
-    display: grid;
-    grid-column-end: span 2;
-    background-color: black;
-}
-.item4 img{
-    width:100%;
-    height:100%;
-    display:flex;
-    flex-wrap:wrap;
-}
-.item5{
-    display: grid;
-    grid-column-end: span 1;
-    background-color: grey;
-}
-.item5 img{
-    width:100%;
-    height: 100%;
-    display:flex;
-    flex-wrap:wrap;
-}
-.item6{
-    display:grid;
-    grid-column-end: span 2;
-    background-color:black;
-}
-.item6 img{
-    width: 100%;
-    height:100%;
-    display: flex;
-    flex-wrap: wrap;
-}
+    /*css for hover effect*/
+    .info>h2:hover {
+        color: red;
+    }
 
-/*css for the header of the gallery*/
-.h2{
-    text-decoration: dashed;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-shadow: 2px 1px burlywood;
-    font-size: 40px;
-}
+    /*css with focus effect*/
+    .info>h2:focus {
+        color: red;
+    }
 
-.h2:hover{
-    color:red;
-}
-.h2:focus{
-    color:red;
-}
+
+    /*css for the data on brands*/
+    .info>ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .info li {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: left;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 18px;
+    }
+
+    .info li:hover {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: yellow;
+        font-size: 22px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .info li:focus {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: yellow;
+        font-size: 22px;
+    }
+
+    /*css for the grid effect of brands data*/
+    .content1 {
+        grid-column-end: span 2;
+    }
+
+    .content2 {
+        grid-row-end: span 1;
+    }
+
+    .content3 {
+        grid-column-end: span 1;
+    }
+
+    .content4 {
+        grid-column-end: span 2;
+    }
+
+    .content5 {
+        grid-column-end: span 1;
+    }
+
+    .content6 {
+        grid-column-end: span 1;
+    }
+
+    /*css for the main gallery of the brands page*/
+    .main_gallery {
+        display: grid;
+        grid-template-columns: repeat(5, 20%);
+        grid-auto-columns: minmax(100%, auto);
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .main_gallery>div {
+        /*border: 1px solid burlywood;
+    border-radius: 5px;*/
+        text-align: center;
+        padding: 40px;
+        margin: 1px;
+    }
+
+    /*css for creating the grid for gallery*/
+    .item1 {
+        display: grid;
+        grid-column-end: span 3;
+        background-color: black;
+    }
+
+    .item1 img {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .item2 {
+        display: grid;
+        grid-column-end: span 2;
+        background-color: grey;
+    }
+
+    .item2 img {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .item3 {
+        display: grid;
+        grid-column-end: span 5;
+        background-color: beige;
+    }
+
+    .item3 img {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .item4 {
+        display: grid;
+        grid-column-end: span 2;
+        background-color: black;
+    }
+
+    .item4 img {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .item5 {
+        display: grid;
+        grid-column-end: span 1;
+        background-color: grey;
+    }
+
+    .item5 img {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .item6 {
+        display: grid;
+        grid-column-end: span 2;
+        background-color: black;
+    }
+
+    .item6 img {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /*css for the header of the gallery*/
+    .h2 {
+        text-decoration: dashed;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-shadow: 2px 1px burlywood;
+        font-size: 40px;
+    }
+
+    .h2:hover {
+        color: red;
+    }
+
+    .h2:focus {
+        color: red;
+    }
 
 }
