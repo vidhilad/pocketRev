@@ -45,6 +45,6 @@ It’s rare these days for a consumer to buy a product without doing any prior r
 
 ## Alfred Emasoga Padilla N01534041
 
-- Homepage -
-- Cameras -
-- Camera Review Page -
+- Homepage: Main page of the website. Image slider implemented under the product section
+- Cameras: Landing page for all camera reviews 
+- Camera Review Page: A complete review page of one camera product
