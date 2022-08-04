@@ -61,29 +61,19 @@ function chnageImage()
         d6.src = './images/new_products/m33.jpg'
     }
 }
-const btn = document
-    .querySelector('.read-more-btn');
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
 
-const text = document
-    .querySelector('.card__read-more');
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
 
-const cardHolder = document
-    .querySelector('#main_content');
-
-cardHolder
-    .addEventListener('click', e => {
-
-        const current = e.target;
-
-        const isReadMoreBtn = current.className.includes('read-more-btn');
-
-        if (!isReadMoreBtn)
-            return;
-
-        const currentText = e.target.parentNode.querySelector('.card__read-more');
-
-        currentText.classList.toggle('card__read-more--open');
-
-        current.textContent = current.textContent.includes('Read More...') ? 'Read Less...' : 'Read More...';
-
-    });
+}
