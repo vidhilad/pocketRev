@@ -210,6 +210,39 @@ background: #000;
  label.color-6{
    background-color: darkblue;
  }
+
+ .likeDislike{
+	margin-top: 10px;
+	margin-bottom: 20px;
+ }
+ .voting{
+	position: relative;
+	justify-content: center;
+ }
+ input{
+	margin-top: 10px;
+	width: 50px;
+	border: none;
+	background: none;
+	color: black;
+	font-size: 20px;
+	pointer-events: none;
+ }
+ .btnLike{
+	margin-top: 10px;
+	color: gray;
+	background: none;
+	border: none;
+	background-color:  #E6E6E3;
+	font-size: 25px;
+	padding: 0 15px;
+	margin-left: 10px;
+	cursor: pointer;
+ }
+ .btnLike:active{
+	color: #004eff;
+	transform: scale(1.2);
+ }
 @media screen and (min-width: 992px){
 	.card{
 		display: grid;
