@@ -243,6 +243,19 @@ background: #000;
 	color: #004eff;
 	transform: scale(1.2);
  }
+ .rating {
+    display: flex;
+    align-items: center;
+	margin-bottom: 10px;
+	color: red;
+}
+
+ #countNumber {
+    font-size: 1.3em;
+	font-weight: 400;
+	color: #000;
+	margin-left: 12px;
+}
 @media screen and (min-width: 992px){
 	.card{
 		display: grid;
