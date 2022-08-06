@@ -1,4 +1,3 @@
-
 const thumbs=document.querySelector(".thumb-img").children;
 const likeBtn = document.querySelector('#likeBtn');
 const disLikeBtn = document.querySelector('#disLikeBtn');

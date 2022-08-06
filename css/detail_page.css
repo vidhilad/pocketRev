@@ -40,8 +40,8 @@ img{
 	
 }
 .product-imgs .thumb-img .box img{
-      max-width: 100%;
-      max-height: 100%;
+	  max-width: 100%;
+	  max-height: 100%;
 }
 .product-content{
 	padding: 2rem 1rem;
@@ -244,14 +244,14 @@ background: #000;
 	transform: scale(1.2);
  }
  .rating {
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 	margin-bottom: 10px;
 	color: red;
 }
 
  #countNumber {
-    font-size: 1.3em;
+	font-size: 1.3em;
 	font-weight: 400;
 	color: #000;
 	margin-left: 12px;
