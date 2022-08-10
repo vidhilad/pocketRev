@@ -314,6 +314,10 @@ tr:nth-child(even) {
     border: 2px solid rgb(73, 156, 230);
 }
 
+#similar_products .articles .product:last-child {
+    display: none;
+}
+
 #similar_products .articles i {
     color: rgb(73, 156, 230);
 }
@@ -427,7 +431,7 @@ tr:nth-child(even) {
 }
 
 .sign_up .sign_up_email input[type="email"] {
-    width: 300px;
+    width: 100%;
     height: 40px;
     margin: 0;
 }
@@ -476,7 +480,7 @@ tr:nth-child(even) {
 }
 
 .reaction .thumbs_containter {
-    width: 25%;
+    width: 35%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -554,6 +558,13 @@ tr:nth-child(even) {
 .about_author div p {
     padding: 16px;
     padding-top: 0;
+}
+
+@media only screen and (min-width: 500px) {
+    #similar_products .articles .product:last-child {
+        display: block;
+    }
+    
 }
 
 @media only screen and (min-width: 900px) {
