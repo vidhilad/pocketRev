@@ -24,7 +24,8 @@ It’s rare these days for a consumer to buy a product without doing any prior r
 ## Janki Patel
 
 - Login : completed responsive page with showing confirm button to submit.
-- Desktop : page for desktops
+- Desktop : completed page with html css
+- Desktop details : image slider using js
 - New products : completed page using image mouse over effect
 
 ## Vidhi Lad
@@ -46,5 +47,5 @@ It’s rare these days for a consumer to buy a product without doing any prior r
 ## Alfred Emasoga Padilla N01534041
 
 - Homepage: Main page of the website. Image slider implemented under the product section
-- Cameras: Landing page for all camera reviews 
+- Cameras: Landing page for all camera reviews
 - Camera Review Page: A complete review page of one camera product
