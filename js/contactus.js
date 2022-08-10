@@ -13,10 +13,12 @@ function validate(){
     let phone = document.getElementById("number").value;
     let email = document.getElementById("email").value;
     let address=document.getElementById("street-address").value;
+    let country=document.getElementById("country").value;
     let postal=document.getElementById("postcode").value;
     let suggest=document.getElementById("suggest").value;
     const error_message = document.getElementById("error_message");
     const first_message=document.getElementById("first_message");
+    const second_message=document.getElementById("second_message");
     //Text variable to display the error message.
     let text;
 
@@ -26,13 +28,15 @@ function validate(){
       first_message.innerHTML=text;
       return false;
     }
+    else{
+      text="Details have been entered and submitted."
+      second_message.innerHTML=text;
     //Condition to check if the first name entered is of minimum 4 characters or not.
     if(firstname.length < 4){
       text = "First name must be of minimum 4 characters...";
       error_message.innerHTML = text;
       return false;
     }
-
     //Condition to check if the last name entered is of minimum 3 characters or not.
     if(lastname.length < 3){
       text = "Last name must be of minimum 3 characters...";
@@ -62,8 +66,8 @@ function validate(){
     }
       
     //Condition to check the postal code entered is of valid length.
-    if(postal.length > 6){
-        text = "Postal code must be of length 6...";
+    if(postal.length > 6 && postal==0){
+        text = "Postal code must be of length 6 or you have not entered the postal code ...";
         error_message.innerHTML = text;
         return false;
     }
@@ -87,6 +91,8 @@ function validate(){
             "Postal Code: "+postcode+"\n"+
             "Your Suggestion: "+suggest+"\n";
     message.innerHTML=alert(message+"You have Successfully connected with us.");
+    text="";
+    error_message.innerHTML=text;
     return true;
-
   }
+}
