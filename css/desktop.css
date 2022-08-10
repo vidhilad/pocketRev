@@ -25,7 +25,7 @@ main
     align-items: center;
     text-align: center;
     justify-content: space-between;
-    background-color:  #e5e7eb;
+    background-color:  #f7f8fb;
 
 }
 #desktop_products
@@ -45,7 +45,10 @@ main
 .rating span {
        color: red;
    }
-
+.wrapper .card:hover{
+    background-color: #c4c6ca;
+    border-color: 1px solid darkgray;
+}
 .wrapper .card 
 {
     width: 270px;
@@ -69,6 +72,9 @@ main
     height: 200px;
     margin: 0;
     width: 100%;
+}
+.card .imgdesktop img:hover{
+    transform: scale(1.1);
 }
 .wrapper .card .content-desktop  h3
 {
@@ -138,7 +144,7 @@ main
 }
 
 .cat-center .cat:hover img {
-    transform: scale(1.1);
+    transform: scale(1.4);
 }
 
 .cat-center .cat div {
