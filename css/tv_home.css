@@ -112,7 +112,7 @@ article a {
 }
 
 .compareTvImage {
-    width: 200px;
+    width: 180px;
     height: 150px;
 }
 
@@ -189,26 +189,6 @@ article a {
     .more article {
         border: initial;
     }
-
-    /* table th {
-        width: 200px;
-    }
-
-    table .our-picks .tv_info {
-        margin: 12px;
-    }
-
-    td img {
-        width: 250px;
-        height: 140px;
-        border: 1px solid lightgray;
-    }
-
-    .compare_table h2 {
-        font-size: 2em;
-        font-weight: 500;
-        margin: 32px 0;
-    } */
 
     #main-grid {
         display: grid;
