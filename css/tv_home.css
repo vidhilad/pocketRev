@@ -106,128 +106,30 @@ article a {
     color: var(--color-primary);
 }
 
-table {
-    display: block;
-    overflow-x: auto;
-    border-collapse: collapse;
+#main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-table tr:nth-child(even) {
-    background-color: var(--light-gray);
-}
-
-td img {
+.compareTvImage {
     width: 200px;
-    height: 100px;
-    border: 1px solid lightgray;
+    height: 150px;
 }
 
-table th {
-    font-size: 1.2em;
-    display: flex;
-    flex-direction: column;
-    width: 120px;
-    justify-content: center;
-    text-align: start;
-}
-
-table .our-picks th {
-    height: 280px;
-}
-
-table th {
-    border-right: 2px solid rgb(236, 236, 236);
-}
-
-table td {
-    border-right: 2px solid rgb(236, 236, 236);
-}
-
-table .our-picks .tv_info {
-    display: flex;
-    flex-direction: column;
-    margin: 4px;
-    justify-content: center;
-    align-items: center;
-}
-
-table .our-picks .tv_info p {
-    margin-top: 4px;
-}
-
-table .our-picks .tv_info button {
-    margin-top: 0;
-}
-
-.editor-choice {
-    height: 120px;
-}
-
-.editor-choice th {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 120px;
-}
-
-.editor-choice .editor-rating {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.editor-choice .editor-rating p {
-    font-size: 1.3em;
-    color: var(--color-primary);
-    margin-top: 0;
-    margin-bottom: 16px;
-}
-
-.editor-choice .editor-rating div {
-    color: var(--color-primary);
-}
-
-.editor-choice .editor-rating a {
-    margin-top: 4px;
-    color: black;
-}
-
-.editor-choice .editor-rating a:hover {
-    color: var(--color-primary);
-}
-
-.compare_table {
+#tv1, #tv2, #tv3 {
     width: 100%;
+    padding: 8px;
+    justify-self: center;
+    align-self: center;
+    font-weight: bold;
 }
 
-table .single-line-info th {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100px;
-}
-
-table .single-line-info td {
-    text-align: center;
-}
-
-.vrr img {
-    width: 40px;
-    height: 40px;
-    border: initial;
-}
-
-.compare_table h2 {
-    width: 240px;
+.dymanic_comparison > h2 {
     font-size: 2em;
-    margin: 48px 0;
+    font-weight: 500;
     border-bottom: 1px solid var(--color-primary);
-    text-align: start;
-}
-
-table tr td:nth-child(-n+6) {
-    display: none;
+    width: 250px;
+    margin-bottom: 54px;
 }
 
 .tv_info a {
@@ -288,7 +190,7 @@ table tr td:nth-child(-n+6) {
         border: initial;
     }
 
-    table th {
+    /* table th {
         width: 200px;
     }
 
@@ -306,6 +208,11 @@ table tr td:nth-child(-n+6) {
         font-size: 2em;
         font-weight: 500;
         margin: 32px 0;
+    } */
+
+    #main-grid {
+        display: grid;
+        grid-template-columns: 150px 1fr 1fr 1fr;
     }
 
 }
@@ -361,14 +268,6 @@ table tr td:nth-child(-n+6) {
         width: 300px;
         height: 200px;
     }
-
-    .compare_table {
-        width: 100%;
-    }
-
-    table tr td:nth-child(n) {
-        display: table-cell;
-    }
 }
 
 @media screen and (min-width: 1400px) {
@@ -379,5 +278,39 @@ table tr td:nth-child(-n+6) {
 
     .more h2 {
         grid-column: 1 / 5;
+    }
+
+    #main-grid {
+        display: grid;
+        grid-template-columns: 300px 1fr 1fr 1fr;
+    }
+
+    #main-grid select {
+        width: 90%;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    #main-grid .tv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #main-grid .col1_info .tv_info {
+        display: flex;
+        flex-direction: column;
+        margin: 4px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #main-grid select {
+        margin-bottom: 16px;
+    }
+
+    .compareTvImage {
+        width: 300px;
+        height: 200px;
     }
 }
