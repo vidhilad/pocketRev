@@ -18,7 +18,7 @@ It’s rare these days for a consumer to buy a product without doing any prior r
 ## Santosh Dhakal
 
 - About us: Describes our mission, what we review and who we are. Uses keyframe animations and dynamic animated content.
-- TV home : Home page for tv review.
+- TV home : Home page for tv review. Users can dynamically compare 2-3 television. 
 - TV review : Individual tv review page. Uses animated table of content made in canvas; dynamic sign-up, react and comment
 
 ## Janki Patel
