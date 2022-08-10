@@ -89,6 +89,10 @@ nav a {
     font-weight: 500;
 }
 
+nav span {
+    font-weight: 500;
+}
+
 nav a:hover {
     color: rgb(73, 156, 230);
 }
