@@ -42,6 +42,9 @@ main
     padding: 10px;
     color: white;
    }
+.rating span {
+       color: red;
+   }
 
 .wrapper .card 
 {
