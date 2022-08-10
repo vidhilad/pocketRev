@@ -43,7 +43,7 @@ main {
 
 .wrapper .card:hover {
     background-color: #c4c6ca;
-    border-color: 1px solid darkgray;
+    border-color: 1px solid #eeeff1;
 }
 
 .wrapper .card {
