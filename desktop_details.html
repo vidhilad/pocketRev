@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/desktop_details.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    
+</head>
+<body>
+
+    <!-- header -->
+    <header>
+        <div class="logo_wrapper">
+            <a href="#" id="logo"> <img src="images/header/logo.png" alt="logo">
+                <p>PocketRev</p>
+            </a>
+            <div id="login_wrapper_mobile"> <a href="login.html">Login</a> <img src="images/header/account-circle.svg"
+                    alt="account"> <i id="hamburger_menu" class="fa-solid fa-bars"></i> </div>
+        </div>
+        <nav id="top_nav">
+            <ol>
+                <li id="li_home"><a href="./index.html">Home</a></li>
+                <li><a href="./new_products.html">New Products</a> </li>
+                <li><a href="./bestBuyers.html">BestBuys</a> </li>
+                <li><a href="./reviews.html">Reviews</a> </li>
+                <li id="li_review"> <a id="menu_review" href="#">Categories</a> <i class="fa-solid fa-angle-down"></i>
+                    <div id="categories">
+                        <ul>
+                            <li><a href="./mobile_tablets.html"> Phones and Tablet</a></li>
+                            <li><a href="./laptop.html">Laptop</a></li>
+                            <li><a href="./desktop.html">Desktop</a></li>
+                            <li><a href="./tv_home.html">Television</a></li>
+                            <li><a href="./video_games.html">Video Games</a></li>
+                            <li class="bottom_border_initial"><a href="./cameras.html">Cameras</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="bottom_border_initial"><a href="./brands.html">Brands</a></li>
+            </ol>
+        </nav>
+        <div id="login_wrapper"> <a href="./login.html">Login</a> <img src="images/header/account-circle.svg" alt="account">
+        </div>
+    </header>
+   <div class="wrapper">
+    <div class="card-wrapper">
+        <div class="card">
+            <!-- card left -->
+            <div class="product-imgs">
+                <div class="img-display">
+                    <div class="img-showcase">
+                        <img src="./images/new_products/c22.jpg" alt="shoe image">
+                        <img src="./images/new_products/c22.jpg" alt="shoe image">
+                        <img src="./images/new_products/c1.jfif" alt="shoe image">
+                        <img src="./images/new_products/laptop.png" alt="shoe image">
+                    </div>
+                </div>
+                <div class="img-select">
+                    <div class="img-item">
+                        <a href="#" data-id="1">
+                            <img src="./images/new_products/c22.jpg" alt="shoe image">
+                        </a>
+                    </div>
+                    <div class="img-item">
+                        <a href="#" data-id="2">
+                            <img src="./images/new_products/c22.jpg" alt="shoe image">
+                        </a>
+                    </div>
+                    <div class="img-item">
+                        <a href="#" data-id="3">
+                            <img src="./images/new_products/c1.jfif" alt="shoe image">
+                        </a>
+                    </div>
+                    <div class="img-item">
+                        <a href="#" data-id="4">
+                            <img src="./images/new_products/laptop.png" alt="shoe image">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- card right -->
+            <div class="product-content">
+                <h2 class="product-title">Lenovo IdeaCentre  </h2>
+                <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>4.7(21)</span>
+                </div>
+        
+                <div class="product-detail">
+                    <h2>about this item: </h2>
+                    <p>Seal is opened for upgrade ONLY, Upgrade from the base: Lenovo IdeaCentre A340 23.8" FHD Touchscreen AIO i3-9100T 4GB
+                    DDR4, 256GB PCIe SSD, Windows 10; 1-year warranty on Upgraded RAM/SSD from TWE, and original 1-year Manufacture warranty
+                    on remaining components.</p>
+                    <ul>
+                        <li>Brand: <span>Lenovo</span></li>
+                        <li>Screen size: <span>23.8 Inches</span></li>
+                        <li>CPU speed <span>3.1 GHz</span></li>
+                        <li>Shipping Area: <span>All over the world</span></li>
+                        <li>Shipping Fee: <span>Free</span></li>
+                    </ul>
+                </div>
+    
+                <div class="purchase-info">
+                    <input type="number" min="0" value="1">
+                    <button type="button" class="btn">
+                        Add to Cart <i class="fas fa-shopping-cart"></i>
+                    </button>
+                    <button type="button" class="btn">Compare</button>
+                </div>
+    
+               
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer_main">
+        <h1> <img src="./images/logo.png" id="logomain" alt="logo">
+            PocketReview </h1>
+        <p>
+            We help customers to select the best products by reviewing the feedbacks of other customers,
+            and buy the best product</p>
+    </div>
+    <ul class="footer_links">
+        <li class="footer-col">
+            <h2> Quick Links</h2>
+            <ul class="box">
+                <li><a href="./new_products.html">New Products</a></li>
+                <li><a href="./bestBuyers.html">Best Buyers</a></li>
+                <li><a href="./reviews.html">Reviews</a></li>
+            </ul>
+        </li>
+        <li class="footer-col">
+            <h2> Extra Links</h2>
+            <ul class="box">
+                <li><a href="./brands.html">Brands</a></li>
+                <li><a href="./contactus.html">Contant Us</a></li>
+                <li><a href="./about_us.html">About Us</a></li>
+
+            </ul>
+        </li>
+        <li class="footer-col">
+            <h2>Social</h2>
+            <ul class="box">
+                <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i> You-Tube</a></li>
+            </ul>
+        </li>
+    </ul>
+    <div class="b-footer">
+        <p>
+            All rights reserved by &copy; PocketReview 2022 </p>
+    </div>
+</footer>
+    <script src="./js/desktop_details.js"></script>
+</body>
+</html>
