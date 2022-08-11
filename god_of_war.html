@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <script src="https://kit.fontawesome.com/f6de64d3fc.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/god.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header >
+        <div class="logo_wrapper">
+            <a href="#" id="logo">
+                <img src="images/header/logo.png" alt="logo">
+                <p>PocketRev</p>
+            </a>
+
+            <div id="login_wrapper_mobile">
+                
+                <a href="#">Login</a>
+                <img src="images/header/account-circle.svg" alt="account">
+                <i id="hamburger_menu" class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <nav id="top_nav">
+            <ol>
+                <li id="li_home"><a href="./index.html">Home</a></li>
+                <li><a href="./new_products.html">New Products</a> </li>
+                <li><a href="./bestBuyers.html">BestBuys</a> </li>
+                <li><a href="./Reviews.html">Reviews</a> </li>
+                <li id="li_review">
+                    <span id="menu_review">Categories</span>
+                    <i class="fa-solid fa-angle-down"></i>
+                    <div id="categories">
+                        <ul>
+                            <li><a href="./mobile_tablets.html"> Phones and Tablet</a></li>
+                            <li><a href="./laptop.html">Laptop</a></li>
+                            <li><a href="./desktop.html">Desktop</a></li>
+                            <li><a href="./tv_home.html">Television</a></li>
+                            <li><a href="./video_games.html">Video Games</a></li>
+                            <li class="bottom_border_initial"><a href="./cameras.html">Cameras</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="bottom_border_initial"><a href="./brands.html">Brands</a></li>
+            </ol>
+        </nav>
+
+        <div id="login_wrapper">
+            <a href="./login.html">Login</a>
+            <img src="images/header/account-circle.svg" alt="account">
+        </div>
+    </header>
+    <!-- Main Web Content Starts here -->
+    <main>
+        
+
+            <div class="heading">
+                
+                
+                
+                <h1>God of War Review</h1>
+                <p id="teac">Teaching an old god new tricks</p>
+            </div>
+            <!-- Display Date using Java-Script -->
+            <div class="date">
+                <script>
+                    const today = new Date();
+                    document.write(`${today.toDateString() }`);
+                </script>
+            </div>
+            
+            <img id="revphoto" src="./images/ash/godrev.jpg" width="1024" height="600">
+            <div class="row">
+                
+                <div class="pros">
+                    <!-- <h2 class="pro">Pros</h2> -->
+                    <ul>
+                        <li>✅Great visuals and spectacular set pieces</li>
+                        <li>✅Rewarding exploration</li>
+                        <li>✅Fascinating fantasy setting</li>
+                        <li>✅Creative, engaging combat system</li>
+                        <li>✅Satisfying ability upgrades and RPG elements</li>
+                    </ul>
+                </div>
+                <div class="cons">
+                    <!-- <h2 class="con">Cons</h2> -->
+                    <ul>
+                        <li>➖Clunky camera, especially when fighting multiple foes</li>
+                        <li>➖Some enemies are more frustrating than fun to fight</li>
+                        <li>➖Inconsistent frame rates</li>
+                    </ul>
+            </div>
+            
+        </div>
+        <div class="row1">
+
+            <aside>
+                <h2>🔴🔴🔴🔴⭕4.0 Excellent</h2>
+                <h3>THE BOTTOM LINE</h3>
+                <p>Kratos, the god slayer, gets a new look, fresh tools, and a Norse pantheon to cut down in this dramatic, exciting shake-up of the classic God of War franchise.</p>
+            </aside>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/x_MtcOznfM4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p class="review-para">God of War, Sony’s premier action-adventure title, has made its way onto PC, delivering all the over-the-top action, flowing combat, and great visuals that made the 2018 PlayStation 4 release so impressive. This entry reboots the franchise by streamlining the action and controls, while introducing a fascinating Norse setting and mythos. This PC version doesn’t offer anything new compared to the console release, but it has a graphical settings suite that takes advantage of your PC’s strengths. The visual options are nice additions, but God of War suffers from inconsistent frame rates. Still, Kratos' newest adventure is a lengthy, action-packed game that's filled with RPG-like customization, intuitive combat, and great puzzles. Priced at $49.99, God of War is a PC game that belongs in your library.</p>
+
+        <div class="container">
+            <h4>Leave your comments:</h4>
+            <input class="comment-box-name" type="text" placeholder="Enter your name" id="name">
+            <br>
+            <br>
+            <input class="comment-box" type="text" aria-rowcount="5" placeholder=" Enter comment" id="comment"> 
+            <br>
+            <br>
+            <button onclick="add()" class="btn">Submit</button>
+            <button onclick="location.reload()" class="btn">Clear</button>
+            <ul class="list"></ul>
+        </div>
+            
+            <script src="./js/plugin.js"></script> 
+
+        </main>
+
+
+        
+    
+      
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer_main">
+            <h1> <img src="./images/logo.png" alt="logo" width="40px " height="40px">
+         PocketReview </h1>     
+        <p>
+            We help customers to select the best products by reviewing the feedbacks of other customers,
+            and buy the best product</p>
+        </div>
+        <ul class="footer_links">
+        <div class="footer-col">
+        <li>
+          <h2> Quick Links</h2>
+        <ul class="box">
+        <li><a href="#">New Products</a></li>
+        <li><a href="#">Best Buyers</a></li>
+        <li><a href="#">Reviews</a></li>
+        </ul>
+        </li>
+    </div>
+    <div class="footer-col">
+        <li>
+          <h2> Extra Links</h2>
+        <ul class="box">
+        <li><a href="#">Brands</a></li>
+        <li><a href="#">Contant Us</a></li>
+        <li><a href="#">Customer Services</a></li>
+        </ul>
+        </li>
+    </div>
+    <div class="footer-col">
+        <li>
+            <h2>Social</h2>
+          <ul class="box">
+          <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+          <li><a href="#"><i class="fab fa-youtube"></i> You-Tube</a></li>
+          </ul>
+          </li>
+    </div>
+        </ul>
+        <div class="b-footer">
+        <p>
+        All rights reserved by &copy; PocketReview 2022 </p>
+        </div>
+        </footer>
+</body>
+
+</html>

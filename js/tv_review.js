@@ -20,10 +20,16 @@ const listOfComments = []
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    /*
-     * Registers intersection observer to trigger canvas animation and visibility
-     */
-    registerObservers()
+    
+    const mediaQuery = window.matchMedia('(min-width:750px)')
+    if (mediaQuery.matches) {
+        /*
+        * Registers intersection observer to trigger canvas animation and visibility
+        */
+
+        registerObservers()
+    }
+    
 
     /*
      * Click listeners

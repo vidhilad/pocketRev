@@ -1,7 +1,6 @@
-<!DOCTYPE html>
-
 <html>
 <head>
+    <title>Review</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <link rel="stylesheet" href="./css/header.css">
@@ -10,153 +9,184 @@
     <script src="https://kit.fontawesome.com/f6de64d3fc.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/Review.css">
 </head>
-<header >
-    <div class="logo_wrapper">
-        <a href="#" id="logo">
-            <img src="images/header/logo.png" alt="logo">
-            <p>PocketRev</p>
-        </a>
 
-        <div id="login_wrapper_mobile">
-            
-            <a href="#">Login</a>
+<body>
+    <header >
+        <div class="logo_wrapper">
+            <a href="#" id="logo">
+                <img src="images/header/logo.png" alt="logo">
+                <p>PocketRev</p>
+            </a>
+
+            <div id="login_wrapper_mobile">
+                
+                <a href="#">Login</a>
+                <img src="images/header/account-circle.svg" alt="account">
+                <i id="hamburger_menu" class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <nav id="top_nav">
+            <ol>
+                <li id="li_home"><a href="./index.html">Home</a></li>
+                <li><a href="./new_products.html">New Products</a> </li>
+                <li><a href="./bestBuyers.html">BestBuys</a> </li>
+                <li><a href="./reviews.html">Reviews</a> </li>
+                <li id="li_review">
+                    <a id="menu_review" href="/reviews.html">Categories</a>
+                    <i class="fa-solid fa-angle-down"></i>
+                    <div id="categories">
+                        <ul>
+                            <li><a href="./mobile_tablets.html"> Phones and Tablet</a></li>
+                            <li><a href="./laptop.html">Laptop</a></li>
+                            <li><a href="./desktop.html">Desktop</a></li>
+                            <li><a href="./tv_home.html">Television</a></li>
+                            <li><a href="./video_games.html">Video Games</a></li>
+                            <li class="bottom_border_initial"><a href="./cameras.html">Cameras</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="bottom_border_initial"><a href="./brands.html">Brands</a></li>
+            </ol>
+        </nav>
+
+        <div id="login_wrapper">
+            <a href="./login.html">Login</a>
             <img src="images/header/account-circle.svg" alt="account">
-            <i id="hamburger_menu" class="fa-solid fa-bars"></i>
+        </div>
+        <script src="./js/header.js"></script>
+    </header>
+    <div class="main0">
+        <div class="window">
+            <button class="show-modal">Short Review</button>
+    
+        <div class="modal hidden">
+          <button class="close-modal">&times;</button>
+          <h1>Pocket Review</h1>
+          <p>
+            Considering how sub-$600 Windows laptops come with 16GB of RAM these days, we’re not sure why Apple is adamant about sticking with 8GB of memory for its $1,199 M2 MacBook Air. Although we admit that Apple’s unified memory performs better than an equivalent DDR4 RAM, it’s still not an excuse for a 2022 laptop to pack just 8GB of RAM.
+          </p>
+        </div>
+        <div class="overlay hidden"></div>
+    
+        <script src="./js/review.js"></script>
+        </div>
+        
+        <div class="row">
+            <main>
+            
+                <!-- Mouse Review -->
+                <div class="box1">
+                    <div class="heading1"><strong>Logitech MX Master 3S Review:Everything just clicks</strong> </div>
+                    <img src="./images/ash/mx-master-3s-mouse-top-view-graphite.png" alt="Logitech MX 3s" class="mx3s"
+                    height="350"
+                    width="460"/>
+                    
+                       <div class="p"><strong>The</strong> point is that the volume of computer accessories can matter a lot, especially when you're working in a communal space. 
+                        At least, that's my main takeaway from using Logitech's latest mouse, the MX Master 3S, which is different in just two ways
+                        from the 2019 MX Master 3 that it's replacing: it's got a higher resolution 8,000 DPI sensor (up from 4,000 DPI last time around) 
+                        and a mouse click that Logitech claims is 90 percent quieter. It's a change that won't be for everyone, and I don't think anyone
+                        who already owns an MX Master 3 should worry about spending $99 on this new model. The question is whether anyone else should.</div>
+                </div>
+        
+                <!-- Laptop --> 
+
+                <div class="box2">
+                    <div class="heading1"><strong>Lenovo Legion 5i Pro (2022)</strong> </div>
+                    <img src="./images/ash/leno.png" alt="laptop front" width="500" height="360">
+            
+                    <img src="./images/ash/lenovo-laptop.png" alt="Lenovo Laptop" class="levono1"
+                    height="300"
+                    width="420">
+                    <div class="row1">
+                        <div class="specs">
+                            <ul class="li0">
+                                <li class="li0">Model: 82RF000TUS</li>
+                                <li class="li0">Intel Core i7-12700H processor (up to 4.7GHz, 14 cores)</li>
+                                <li class="li0">16GB DDR5 4800MHz (user-replaceable up to 32GB)</li>
+                                <li class="li0">Nvidia GeForce RTX 3070 Ti GPU with 8GB GDDR6 VRAM (1,485MHz boost clock speed, 150W maximum power)</li>
+                                <li class="li0">512GB NVMe SSD (user-replaceable, one M.2 2242 slot, one M.2 2280 slot)</li>
+                                <li class="li0">16-inch WQXGA 2560 x 1600 IPS display, 165Hz refresh rate, 500-nit, VRR</li>
+                            </ul>
+                        </div>
+                        <div class="pros">
+                            <!-- <h2 class="pro">Pros</h2> -->
+                            <ul>
+                                <li>✅World-class productivity and gaming performance</li>
+                                <li>✅Attractive medium-high-res, medium-fast-refresh 16:10 display</li>
+                                <li>✅Responsive keyboard</li>
+                                <li>✅Plenty of ports</li>
+                                <li>✅Satisfying ability upgrades and RPG elements</li>
+                            </ul>
+                        </div>
+                        <div class="cons">
+                            <!-- <h2 class="con">Cons</h2> -->
+                            <ul>
+                                <li>➖No SD or microSD card slot</li>
+                                <li>➖No biometrics</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Here the general review of macbook starts -->
+            
+            <div class="container0">
+                <div class="container1">
+                    <h3>You should probably skip the base M2 MacBook Pro model</h3>
+                    <h5>It’s slower than any ‘Pro’ computer ought to be</h5>
+    
+                    <img class="macbook-img" src="./images/ash/macbook.png" alt="macbook m2" width="900" height="auto">
+                    <h6>The base model 13-inch M2 MacBook Pro with 256GB of storage and 8GB of RAM is available to buy right now. You probably shouldn’t buy it. With more details coming out about just how slow it is compared to higher-specced versions of the M2 and even the M1 model, it's becoming increasingly clear that the cheapest 13-inch M2 MacBook Pro is a real stinker of a deal.</h6>
+                </div>
+    
+                <!-- Youtube video using embeded code from YOUTUBE.COM -->
+                
+               
+    
+                <div class="cont">
+                    <p class="para">Earlier this week, videos from Max Tech and Created Tech showed the storage in the base M2 model was slow compared to the M1 version, with 50 percent slower SSD read speeds and 30 percent slower write speeds. It’s because Apple opted to use just one 256GB NAND flash storage chip instead of two 128GB chips as found on the M1. The move, likely a cost-saving one, means none of the reading and writing can happen in parallel across two chips. Everything has to go through just the one, and that effectively throttles the otherwise high-octane M2 chip.</p>
+                    
+                    
+                    <p class="para">Now, Max Tech has tested the base 8GB RAM / 256GB storage model against the more expensive 13-inch M2 MacBook Pro with 512GB of storage and 16GB of RAM, and yup, it’s slower than that laptop, too! That’s partially because the higher-specced device uses two 256GB NAND chips instead of one, so processes can run in parallel across the two chips. They’re likely the same NAND chips as found in the base model — further suggesting the slowdown is related to the decision to use just one NAND chip in the cheaper MacBook Pro.
+    
+                    </p>
+                    <!-- Embedded Code of YOUTUBE VIDEO -->
+                    <div class="video">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/I82gF_YAljU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <p class="para">For example, when Max Tech exported 50 42-megapixel images in Lightroom, the 8GB / 256GB MacBook Pro did the task in two minutes flat. The 16GB / 512GB MacBook Pro did it in one minute and seven seconds. That’s nearly double the speed just by using more RAM and faster storage.</p>
+                </div>
+            </div>
+                
+                    
+                    <!-- Short Box and Description of the Laptop -->
+                    
+                </div>        
+            </main>
+              <!-- Side Navigation to video games -->
+              <aside>
+                <!-- Different Games are displayed here -->
+                <h4><marquee><a href="./Team-Hyperlink/video_games.html">Popular Now</a></marquee> </h4>
+                <ul>
+                    <li>Ghost of Tusima
+                        
+                    </li>
+                    <img class="game1" src="./images/ash/tusima.png" alt="ghost of tusima photo" width="75" height="75">
+                    <li>The Witcher 3
+                        
+                    </li>
+                    <img class="game2" src="./images/ash/witcher3.png" alt="The witcher 3" width="75" height="75">
+                    <li>Need for Speed Rivals</li>
+                    <img class="game3" src="./images/ash/NFSRPromotional2.png" alt="need for speed rivals img" width="75" height="75">
+                    <li>Red Dead Redemption 2</li>
+                    <img src="./images/ash/red-dead2.png" width="75" height="75" alt="REd dead2">
+        
+                </ul>
+            </aside>
         </div>
     </div>
-    <nav id="top_nav">
-        <ol>
-            <li id="li_home"><a href="./index.html">Home</a></li>
-            <li><a href="./new_products.html">New Products</a> </li>
-            <li><a href="./bestBuyers.html">BestBuys</a> </li>
-            <li id="li_review">
-                <a id="menu_review" href="#">Reviews</a>
-                <i class="fa-solid fa-angle-down"></i>
-                <div id="categories">
-                    <ul>
-                        <li><a href="./mobile_tablets.html"> Phones and Tablet</a></li>
-                        <li><a href="./laptop.html">Laptop</a></li>
-                        <li><a href="./desktop.html">Desktop</a></li>
-                        <li><a href="./tv_home.html">Television</a></li>
-                        <li><a href="/video_games.html">Video Games</a></li>
-                        <li class="bottom_border_initial"><a href="./cameras.html">Cameras</a></li>
-                    </ul>
-                </div>
-            </li>
-            <li class="bottom_border_initial"><a href="./brands.html">Brands</a></li>
-        </ol>
-    </nav>
-
-    <div id="login_wrapper">
-        <a href="./login.html">Login</a>
-        <img src="images/header/account-circle.svg" alt="account">
-    </div>
-    <script src="/js/header.js"></script>
-</header>
-<body>
-
-
-    <main>
-        
-        
-            
-            <div class="box1">
-                <div class="heading1"><strong>Logitech MX Master 3S Review:Everything just clicks</strong> </div>
-                <img src="./images/mx-master-3s-mouse-top-view-graphite.png" alt="Logitech MX 3s" class="mx3s"
-                height="350"
-                width="460"/>
-                
-                   <div class="p"><strong>The</strong> point is that the volume of computer accessories can matter a lot, especially when you're working in a communal space. 
-                    At least, that's my main takeaway from using Logitech's latest mouse, the MX Master 3S, which is different in just two ways
-                    from the 2019 MX Master 3 that it's replacing: it's got a higher resolution 8,000 DPI sensor (up from 4,000 DPI last time around) 
-                    and a mouse click that Logitech claims is 90 percent quieter. It's a change that won't be for everyone, and I don't think anyone
-                    who already owns an MX Master 3 should worry about spending $99 on this new model. The question is whether anyone else should.</div>
-            </div>
-            
-            
-            
-    <div class="box2">
-        <div class="heading1"><strong>Lenovo Legion 5i Pro (2022)</strong> </div>
-        <img src="/images/leno.png" alt="laptop front" width="500" height="460">
-
-        <img src="./images/lenovo-laptop.png" alt="Lenovo Laptop" class="levono1"
-        height="450"
-        width="480">
-        
-        <div class="specs">
-                <ul class="li0">
-                    <li class="li0">Model: 82RF000TUS</li>
-                    <li class="li0">Intel Core i7-12700H processor (up to 4.7GHz, 14 cores)</li>
-                    <li class="li0">16GB DDR5 4800MHz (user-replaceable up to 32GB)</li>
-                    <li class="li0">Nvidia GeForce RTX 3070 Ti GPU with 8GB GDDR6 VRAM (1,485MHz boost clock speed, 150W maximum power)</li>
-                    <li class="li0">512GB NVMe SSD (user-replaceable, one M.2 2242 slot, one M.2 2280 slot)</li>
-                    <li class="li0">16-inch WQXGA 2560 x 1600 IPS display, 165Hz refresh rate, 500-nit, VRR</li>
-                    <li class="li0">80Wh battery</li>
-                    <li class="li0">300W power brick</li>
-                    <li class="li0">Four-zone RGB keyboard</li>
-                </ul>
-            </div>
-
-            
-            <div class="p1">
-                <strong>The 2022</strong> version of the Legion 5 Pro brings more of the same but with an as-tested $1,999 price that costs $500 more than the AMD-based version that we tested last year.
-                It still delivers one of the best typing experiences that I’ve experienced on a gaming laptop, and Lenovo improved on its display by adding variable refresh rate support to keep games looking smooth.
-                <br>
-                As for what’s new, it’s faster, with support for the latest 12th Gen Intel processors and AMD’s Ryzen 6000 H-series processors, 
-                along with new and more powerful GPUs. Also, 
-                last year’s edgier-looking top shell looks a little more toned down now.
-            </div>
-    </div>    
-
-            <!-- <button>Shop here</button> -->
-            <div class="container1">
-                <h3>You should probably skip the base M2 MacBook Pro model</h3>
-                <h5>It’s slower than any ‘Pro’ computer ought to be</h5>
-
-                <img class="macbook-img" src="/images/macbook.png" alt="macbook m2" width="900" height="auto">
-                <h6>The base model 13-inch M2 MacBook Pro with 256GB of storage and 8GB of RAM is available to buy right now. You probably shouldn’t buy it. With more details coming out about just how slow it is compared to higher-specced versions of the M2 and even the M1 model, it's becoming increasingly clear that the cheapest 13-inch M2 MacBook Pro is a real stinker of a deal.</h6>
-            </div>
-
-            <div class="cont">
-                <p>Earlier this week, videos from Max Tech and Created Tech showed the storage in the base M2 model was slow compared to the M1 version, with 50 percent slower SSD read speeds and 30 percent slower write speeds. It’s because Apple opted to use just one 256GB NAND flash storage chip instead of two 128GB chips as found on the M1. The move, likely a cost-saving one, means none of the reading and writing can happen in parallel across two chips. Everything has to go through just the one, and that effectively throttles the otherwise high-octane M2 chip.</p>
-                
-                <br>
-                <br><p>Now, Max Tech has tested the base 8GB RAM / 256GB storage model against the more expensive 13-inch M2 MacBook Pro with 512GB of storage and 16GB of RAM, and yup, it’s slower than that laptop, too! That’s partially because the higher-specced device uses two 256GB NAND chips instead of one, so processes can run in parallel across the two chips. They’re likely the same NAND chips as found in the base model — further suggesting the slowdown is related to the decision to use just one NAND chip in the cheaper MacBook Pro.
-
-                </p>
-                <div class="video">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/I82gF_YAljU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <p>For example, when Max Tech exported 50 42-megapixel images in Lightroom, the 8GB / 256GB MacBook Pro did the task in two minutes flat. The 16GB / 512GB MacBook Pro did it in one minute and seven seconds. That’s nearly double the speed just by using more RAM and faster storage.</p>
-            </div>
-            
-            
-                                        
-        
-    </main>
-    <aside>
-        <h4> <a href="/video_games.html">Video Games</a></h4>
-        <ul>
-            <li>Ghost of Tusima
-                
-            </li>
-            <img class="game1" src="/images/tusima.png" alt="ghost of tusima photo" width="75" height="75">
-            <li>The Witcher 3
-                
-            </li>
-            <img class="game2" src="/images/witcher3.png" alt="The witcher 3" width="75" height="75">
-            <li>Need for Speed Rivals</li>
-            <img class="game3" src="/images/NFSRPromotional2.png" alt="need for speed rivals img" width="75" height="75">
-            <li>Red Dead Redemption 2</li>
-            <img src="/images/red-dead2.png" width="75" height="75" alt="REd dead2">
-
-        </ul>
-    </aside>  
-
-
-
-
-
+    
+      
+    
     <!-- Footer -->
     <footer class="footer">
         <div class="footer_main">
@@ -208,6 +238,7 @@
         </div>
         </footer>
 
+    
 </body>
 
 </html>
