@@ -43,7 +43,6 @@ It’s rare these days for a consumer to buy a product without doing any prior r
 - Gen Review : In this Page reviews of general products are shown such as Laptops and Mouse - HTML and CSS(JS Window MODAL)
 - Video Games : Top 50 Video games now Popular- HTML and CSS GRID AND FLEX (II Feature - Image slider using JS and CSS)
 - God of War( 1 Video Game) : Covered one particular game named "GOD OF WAR" review - Comment feature using JavaScript
-game-test
 
 ## Alfred Emasoga Padilla N01534041
 
