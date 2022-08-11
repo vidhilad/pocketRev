@@ -73,3 +73,36 @@ aside h2{
 body{
     background-color:whitesmoke;
 }
+.container{
+    margin-left: 200px;
+}
+.container h4{
+    text-align: center;
+}
+.comment-box-name{
+    padding: 10px 10px;
+    text-align: center;
+}
+.comment-box{
+    padding:50px 200px;
+    text-align: center;
+}
+.container ul{
+    display: flex;
+    flex-flow: column;
+}
+::placeholder {
+    font-style: italic;
+    font-size: 1em;
+    color: black;
+    /* background: thistle; */
+    padding: 5px;
+  }
+  .btn{
+    border-radius:30px;
+    padding: 10px 20px;
+  }
+  .btn:hover{
+    cursor: pointer;
+    background-color: green;
+  }
