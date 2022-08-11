@@ -61,7 +61,7 @@ body {
 #Image1>img {
     display: grid;
     justify-content: center;
-    width: 400px;
+    width: 500px;
     height: 350px;
 }
 
@@ -316,8 +316,8 @@ body {
     z-index: 999;
     top: 0;
     left: 0;
-    width: 2000px;
-    height: 900px;
+    width: 1500px;
+    height: 600px;
     background: rgb(0, 0, 0, 0.85);
     display: flex;
     align-items: center;
