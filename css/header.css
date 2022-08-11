@@ -109,6 +109,7 @@ nav a:hover {
     padding: 12px;
     box-shadow: 2px 2px 10px 2px lightgrey;
     border-radius: 12px;
+    z-index: 999;
 }
 
 #categories ul {

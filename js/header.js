@@ -1,6 +1,7 @@
 const liReview = document.getElementById('li_review')
 const hamburgerMenu = document.getElementById('hamburger_menu')
 const topNav = document.getElementById('top_nav')
+const categories = document.getElementById('categories')
 
 let isMenuVisible = false;
 
